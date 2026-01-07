@@ -212,37 +212,37 @@ export const committeeMembers: CommitteeMember[] = [
     },
 
     // Development Team
-    {
-        id: 40,
-        name: "Gangaprasad Urekar",
-        designation: "Web Developer",
-        institution: "GECCS",
-        category: "Development Team",
-        image: "/images/committee/development-team/gangaprasad_urekar.jpg"
-    },
-    {
-        id: 41,
-        name: "Vishal Bhutekar",
-        designation: "Web Developer",
-        institution: "GECCS",
-        category: "Development Team",
-        image: "/images/committee/development-team/vishal_bhutekar.jpg"
-    },
-    {
-        id: 42,
-        name: "Keval Gawali",
-        designation: "Web Developer",
-        institution: "GECCS",
-        category: "Development Team",
-        image: "/images/committee/development-team/keval_gawali.jpg"
-    },
-    {
-        id: 43,
-        name: "Rushikesh Gaikwad",
-        designation: "Web Developer",
-        institution: "GECCS",
-        category: "Development Team",
-        image: "/images/committee/development-team/rushi_gaikawad.jpg"
-    }
+    // {
+    //     id: 40,
+    //     name: "Gangaprasad Urekar",
+    //     designation: "Web Developer",
+    //     institution: "GECCS",
+    //     category: "Development Team",
+    //     image: "/images/committee/development-team/gangaprasad_urekar.jpg"
+    // },
+    // {
+    //     id: 41,
+    //     name: "Vishal Bhutekar",
+    //     designation: "Web Developer",
+    //     institution: "GECCS",
+    //     category: "Development Team",
+    //     image: "/images/committee/development-team/vishal_bhutekar.jpg"
+    // },
+    // {
+    //     id: 42,
+    //     name: "Keval Gawali",
+    //     designation: "Web Developer",
+    //     institution: "GECCS",
+    //     category: "Development Team",
+    //     image: "/images/committee/development-team/keval_gawali.jpg"
+    // },
+    // {
+    //     id: 43,
+    //     name: "Rushikesh Gaikwad",
+    //     designation: "Web Developer",
+    //     institution: "GECCS",
+    //     category: "Development Team",
+    //     image: "/images/committee/development-team/rushi_gaikawad.jpg"
+    // }
 ];
 

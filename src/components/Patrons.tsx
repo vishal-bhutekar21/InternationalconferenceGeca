@@ -9,7 +9,7 @@ const Patrons = () => {
     };
 
     const committee = [
-        { name: "Dr. S. K. Hiremath", role: "Organizing Chair", org: "Dept. of AI & DS", image: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
+        { name: "Dr. S. R. Hirekhan", role: "Organizing Chair", org: "Dept. of AI & DS", image: "/images/committee/hods/dr_sr_hirekhan_updated.jpg" },
         { name: "Dr. V. N. Nair", role: "Technical Chair", org: "GCOE Amravati", image: "https://images.unsplash.com/photo-1559839734-2b71f1536783?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
         { name: "Dr. R. S. Patil", role: "Publication Chair", org: "GCOE Amravati", image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" },
         { name: "Dr. P. M. Joshi", role: "Finance Chair", org: "GCOE Amravati", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" }
