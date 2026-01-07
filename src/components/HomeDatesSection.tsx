@@ -10,7 +10,7 @@ const HomeDatesSection = () => {
             details: "Submission of full length papers for technical review and feedback.",
             icon: <FaFileAlt />,
             gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-            shadowColor: "rgba(102, 126, 234, 0.3)"
+            shadowColor: "rgba(102, 126, 234, 0.4)"
         },
         {
             label: "Acceptance Notification",
@@ -19,7 +19,7 @@ const HomeDatesSection = () => {
             details: "Communication of review outcomes and acceptance decisions to authors.",
             icon: <FaClock />,
             gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-            shadowColor: "rgba(240, 147, 251, 0.3)"
+            shadowColor: "rgba(240, 147, 251, 0.4)"
         },
         {
             label: "Camera Ready",
@@ -28,7 +28,7 @@ const HomeDatesSection = () => {
             details: "Final manuscript submission and copyright form completion.",
             icon: <FaCalendarCheck />,
             gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-            shadowColor: "rgba(79, 172, 254, 0.3)"
+            shadowColor: "rgba(79, 172, 254, 0.4)"
         },
         {
             label: "Registration",
@@ -37,7 +37,7 @@ const HomeDatesSection = () => {
             details: "Deadline for conference registration and fee payment.",
             icon: <FaUserCheck />,
             gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
-            shadowColor: "rgba(250, 112, 154, 0.3)"
+            shadowColor: "rgba(250, 112, 154, 0.4)"
         },
         {
             label: "Main Event",
@@ -46,7 +46,7 @@ const HomeDatesSection = () => {
             details: "Technical sessions, keynotes, and sustainable networking at GECCS.",
             icon: <FaUsers />,
             gradient: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)",
-            shadowColor: "rgba(168, 237, 234, 0.3)"
+            shadowColor: "rgba(168, 237, 234, 0.4)"
         }
     ];
 
@@ -87,12 +87,10 @@ const HomeDatesSection = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '4rem' }}
+                    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '4rem', flexDirection: 'column', textAlign: 'center' }}
                 >
-                    <div>
-                        <div className="badge">TIMELINE</div>
-                        <h2 style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--color-primary)', marginTop: '0.5rem' }}>Important Dates</h2>
-                    </div>
+                    <div className="badge">TIMELINE</div>
+                    <h2 style={{ fontSize: '2.5rem', fontWeight: 900, color: 'var(--color-primary)', marginTop: '0.5rem' }}>Important Dates</h2>
                 </motion.div>
 
                 <motion.div
@@ -119,68 +117,61 @@ const HomeDatesSection = () => {
                             }}
                             style={{
                                 padding: '2.5rem 2rem',
-                                background: 'white',
+                                background: item.gradient,
                                 borderRadius: '32px',
                                 textAlign: 'left',
                                 position: 'relative',
                                 overflow: 'hidden',
-                                border: '1px solid rgba(226, 232, 240, 0.8)',
-                                boxShadow: '0 10px 30px rgba(0,0,0,0.06)',
-                                cursor: 'pointer',
+                                border: 'none',
+                                boxShadow: '0 10px 30px rgba(0,0,0,0.1)',
+                                cursor: 'default',
                                 display: 'flex',
                                 flexDirection: 'column',
                                 gap: '1.25rem',
                                 flex: '1 1 300px',
-                                maxWidth: '380px'
+                                maxWidth: '380px',
+                                color: 'white'
                             }}
                         >
-                            {/* Gradient Background Accent */}
-                            <div style={{
-                                position: 'absolute',
-                                top: 0,
-                                left: 0,
-                                right: 0,
-                                height: '6px',
-                                background: item.gradient
-                            }} />
-
                             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                                 <div style={{
                                     width: '50px',
                                     height: '50px',
                                     borderRadius: '16px',
-                                    background: item.gradient,
+                                    background: 'rgba(255, 255, 255, 0.2)',
+                                    backdropFilter: 'blur(10px)',
                                     color: 'white',
                                     display: 'flex',
                                     alignItems: 'center',
                                     justifyContent: 'center',
                                     fontSize: '1.25rem',
-                                    boxShadow: `0 10px 20px ${item.shadowColor}`
+                                    border: '1px solid rgba(255, 255, 255, 0.3)'
                                 }}>
                                     {item.icon}
+                                </div>
+                                <div style={{ fontSize: '0.8rem', fontWeight: 800, color: 'rgba(255,255,255,0.9)', textTransform: 'uppercase', letterSpacing: '0.05em', background: 'rgba(0,0,0,0.1)', padding: '0.25rem 0.75rem', borderRadius: '20px' }}>
+                                    Schedule
                                 </div>
                             </div>
 
                             <div>
                                 <h4 style={{
-                                    fontSize: '1.25rem',
+                                    fontSize: '1.5rem',
                                     fontWeight: 800,
-                                    marginBottom: '0.75rem',
-                                    color: 'var(--color-primary)'
+                                    marginBottom: '0.5rem',
+                                    color: 'white',
+                                    textShadow: '0 2px 4px rgba(0,0,0,0.1)'
                                 }}>
                                     {item.label}
                                 </h4>
 
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem', marginBottom: '1rem' }}>
-                                    <div style={{ fontSize: '0.8rem', fontWeight: 800, color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                                        Schedule
-                                    </div>
-                                    <div style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--color-primary)' }}>
+                                    <div style={{ fontSize: '1.1rem', fontWeight: 700, color: 'white' }}>
                                         {item.startDate} — {item.endDate}
                                     </div>
                                 </div>
 
-                                <p style={{ fontSize: '0.9rem', color: 'var(--color-text-muted)', lineHeight: 1.6, fontWeight: 500 }}>
+                                <p style={{ fontSize: '0.95rem', color: 'rgba(255,255,255,0.9)', lineHeight: 1.6, fontWeight: 500 }}>
                                     {item.details}
                                 </p>
                             </div>
