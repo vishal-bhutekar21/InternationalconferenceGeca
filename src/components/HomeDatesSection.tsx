@@ -9,8 +9,8 @@ const HomeDatesSection = () => {
             endDate: "15 Aug 2026",
             details: "Submission of full length papers for technical review and feedback.",
             icon: <FaFileAlt />,
-            gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-            shadowColor: "rgba(102, 126, 234, 0.4)"
+            gradient: "#5D7285", // Muted Slate Blue
+            shadowColor: "rgba(93, 114, 133, 0.4)"
         },
         {
             label: "Acceptance Notification",
@@ -18,8 +18,8 @@ const HomeDatesSection = () => {
             endDate: "15 Sep 2026",
             details: "Communication of review outcomes and acceptance decisions to authors.",
             icon: <FaClock />,
-            gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-            shadowColor: "rgba(240, 147, 251, 0.4)"
+            gradient: "#9A5B5B", // Muted Red
+            shadowColor: "rgba(154, 91, 91, 0.4)"
         },
         {
             label: "Camera Ready",
@@ -27,8 +27,8 @@ const HomeDatesSection = () => {
             endDate: "30 Sep 2026",
             details: "Final manuscript submission and copyright form completion.",
             icon: <FaCalendarCheck />,
-            gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-            shadowColor: "rgba(79, 172, 254, 0.4)"
+            gradient: "#4F8A83", // Muted Teal
+            shadowColor: "rgba(79, 138, 131, 0.4)"
         },
         {
             label: "Registration",
@@ -36,8 +36,8 @@ const HomeDatesSection = () => {
             endDate: "15 Oct 2026",
             details: "Deadline for conference registration and fee payment.",
             icon: <FaUserCheck />,
-            gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
-            shadowColor: "rgba(250, 112, 154, 0.4)"
+            gradient: "#A67C52", // Muted Bronze
+            shadowColor: "rgba(166, 124, 82, 0.4)"
         },
         {
             label: "Main Event",
@@ -45,8 +45,8 @@ const HomeDatesSection = () => {
             endDate: "21 Dec 2026",
             details: "Technical sessions, keynotes, and sustainable networking at GECCS.",
             icon: <FaUsers />,
-            gradient: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)",
-            shadowColor: "rgba(168, 237, 234, 0.4)"
+            gradient: "#5C7C6D", // Muted Sage
+            shadowColor: "rgba(92, 124, 109, 0.4)"
         }
     ];
 
