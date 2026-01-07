@@ -3,10 +3,28 @@ import { NavLink } from 'react-router-dom';
 
 const LoginPage = () => {
     return (
-        <main style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#F8FAFC', padding: '2rem' }}>
-            <div style={{ maxWidth: '1000px', width: '100%', display: 'grid', gridTemplateColumns: '1fr 1.2fr', backgroundColor: 'white', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 25px 50px rgba(0,0,0,0.1)' }}>
+        <main style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#F8FAFC', padding: '1rem' }}>
+            <div style={{
+                maxWidth: '1000px',
+                width: '100%',
+                display: 'flex',
+                flexWrap: 'wrap',
+                backgroundColor: 'white',
+                borderRadius: '24px',
+                overflow: 'hidden',
+                boxShadow: '0 25px 50px rgba(0,0,0,0.1)'
+            }} className="login-flex-container">
                 {/* Visual Side */}
-                <div style={{ backgroundColor: 'var(--color-accent-orange)', padding: '4rem', color: 'white', display: 'flex', flexDirection: 'column', justifyContent: 'center', backgroundImage: 'linear-gradient(135deg, var(--color-accent-orange) 0%, #EA580C 100%)' }}>
+                <div style={{
+                    backgroundColor: 'var(--color-accent-orange)',
+                    padding: 'clamp(2rem, 5vw, 4rem)',
+                    color: 'white',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    backgroundImage: 'linear-gradient(135deg, var(--color-accent-orange) 0%, #EA580C 100%)',
+                    flex: '1 1 400px'
+                }}>
                     <div className="badge" style={{ backgroundColor: 'rgba(255,255,255,0.2)', color: 'white', width: 'fit-content' }}>Registration Open</div>
                     <h1 style={{ fontSize: '3rem', fontWeight: 800, margin: '2rem 0' }}>Welcome to the Future of AI.</h1>
                     <p style={{ opacity: 0.9, lineHeight: 1.8, marginBottom: '4rem' }}>
@@ -28,12 +46,12 @@ const LoginPage = () => {
                     </div>
 
                     <div style={{ marginTop: 'auto', fontSize: '0.75rem', fontWeight: 700, opacity: 0.7, letterSpacing: '0.1em' }}>
-                        NOV 15-17, 2025 • AURANGABAD, INDIA
+                        NOV 15-17, 2026 • (AURANGABAD) CHHATRAPATI SAMBHAJINAGAR, INDIA
                     </div>
                 </div>
 
                 {/* Form Side */}
-                <div style={{ padding: '4rem' }}>
+                <div style={{ padding: 'clamp(2rem, 5vw, 4rem)', flex: '1.2 1 400px' }}>
                     <div style={{ textAlign: 'right', marginBottom: '4rem' }}>
                         <NavLink to="/" style={{ textDecoration: 'none', color: 'var(--color-text-muted)', fontSize: '0.9rem', fontWeight: 700 }}>Back to Home →</NavLink>
                     </div>

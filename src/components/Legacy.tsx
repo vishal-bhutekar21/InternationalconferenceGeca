@@ -28,7 +28,7 @@ const Legacy = () => {
                     }}
                 >
                     <img
-                        src="https://images.unsplash.com/photo-1540575861501-7ad058c639fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                        src="/logos/conferenceimage.jpeg"
                         alt="ICAESD-2024 Session"
                         style={{ width: '100%', height: 'auto', display: 'block' }}
                         onError={(e) => { e.currentTarget.src = 'https://placehold.co/1200x600?text=Conference+Session+2024' }}

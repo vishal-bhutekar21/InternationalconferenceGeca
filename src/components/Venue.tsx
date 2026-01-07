@@ -5,10 +5,16 @@ const Venue = () => {
     return (
         <section id="venue" className="section" style={{ backgroundColor: 'var(--color-primary)', color: 'white', padding: '6rem 0' }}>
             <div className="container">
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '4rem', alignItems: 'center' }}>
-                    <div>
+                <div style={{
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                    gap: '4rem',
+                    alignItems: 'center',
+                    justifyContent: 'space-between'
+                }} className="venue-flex-container">
+                    <div style={{ flex: '1 1 450px' }}>
                         <div className="badge" style={{ backgroundColor: 'rgba(255,255,255,0.1)', color: 'white' }}>LOCATE US</div>
-                        <h2 style={{ fontSize: '3rem', fontWeight: 800, margin: '1rem 0 2rem', color: 'white' }}>Conference <span style={{ color: 'var(--color-accent-orange)' }}>Venue</span></h2>
+                        <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: 800, margin: '1rem 0 2rem', color: 'white' }}>Conference <span style={{ color: 'var(--color-accent-orange)' }}>Venue</span></h2>
                         <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'flex-start', marginBottom: '2rem' }}>
                             <div style={{ color: 'var(--color-accent-orange)', fontSize: '1.5rem', marginTop: '0.25rem' }}>
                                 <FaMapMarkerAlt />
@@ -35,7 +41,8 @@ const Venue = () => {
                             borderRadius: '32px',
                             overflow: 'hidden',
                             boxShadow: '0 20px 40px rgba(0,0,0,0.3)',
-                            position: 'relative'
+                            position: 'relative',
+                            flex: '1 1 450px'
                         }}
                     >
                         <img
@@ -57,6 +64,23 @@ const Venue = () => {
                         </div>
                     </motion.div>
                 </div>
+
+                <style>{`
+                    @media (max-width: 1024px) {
+                        .venue-flex-container {
+                            flex-direction: column !important;
+                            text-align: center;
+                            gap: 3rem !important;
+                        }
+                        .venue-flex-container > div {
+                            flex: 1 1 auto !important;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                    }
+                `}</style>
             </div>
         </section>
     );

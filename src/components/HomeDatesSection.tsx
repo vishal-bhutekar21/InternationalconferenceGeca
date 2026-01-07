@@ -5,35 +5,45 @@ const HomeDatesSection = () => {
     const dates = [
         {
             label: "Paper Submission",
-            date: "15 Aug 2025",
+            startDate: "01 May 2026",
+            endDate: "15 Aug 2026",
+            details: "Submission of full length papers for technical review and feedback.",
             icon: <FaFileAlt />,
             gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
             shadowColor: "rgba(102, 126, 234, 0.3)"
         },
         {
-            label: "Notification",
-            date: "15 Sep 2025",
+            label: "Acceptance Notification",
+            startDate: "16 Aug 2026",
+            endDate: "15 Sep 2026",
+            details: "Communication of review outcomes and acceptance decisions to authors.",
             icon: <FaClock />,
             gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
             shadowColor: "rgba(240, 147, 251, 0.3)"
         },
         {
             label: "Camera Ready",
-            date: "30 Sep 2025",
+            startDate: "16 Sep 2026",
+            endDate: "30 Sep 2026",
+            details: "Final manuscript submission and copyright form completion.",
             icon: <FaCalendarCheck />,
             gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
             shadowColor: "rgba(79, 172, 254, 0.3)"
         },
         {
             label: "Registration",
-            date: "15 Oct 2025",
+            startDate: "01 Oct 2026",
+            endDate: "15 Oct 2026",
+            details: "Deadline for conference registration and fee payment.",
             icon: <FaUserCheck />,
             gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
             shadowColor: "rgba(250, 112, 154, 0.3)"
         },
         {
-            label: "Conference",
-            date: "20-21 Dec",
+            label: "Main Event",
+            startDate: "20 Dec 2026",
+            endDate: "21 Dec 2026",
+            details: "Technical sessions, keynotes, and sustainable networking at GECCS.",
             icon: <FaUsers />,
             gradient: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)",
             shadowColor: "rgba(168, 237, 234, 0.3)"
@@ -62,7 +72,7 @@ const HomeDatesSection = () => {
             y: 0,
             scale: 1,
             transition: {
-                type: "spring",
+                type: "spring" as const,
                 stiffness: 100,
                 damping: 15
             }
@@ -90,7 +100,12 @@ const HomeDatesSection = () => {
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
-                    style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem' }}
+                    style={{
+                        display: 'flex',
+                        flexWrap: 'wrap',
+                        gap: '2rem',
+                        justifyContent: 'center'
+                    }}
                 >
                     {dates.map((item, i) => (
                         <motion.div
@@ -98,89 +113,76 @@ const HomeDatesSection = () => {
                             variants={cardVariants}
                             whileHover={{
                                 y: -10,
-                                scale: 1.03,
+                                scale: 1.02,
                                 boxShadow: `0 25px 50px ${item.shadowColor}`,
                                 transition: { duration: 0.3 }
                             }}
                             style={{
-                                padding: '2.5rem 1.5rem',
+                                padding: '2.5rem 2rem',
                                 background: 'white',
-                                borderRadius: '24px',
-                                textAlign: 'center',
+                                borderRadius: '32px',
+                                textAlign: 'left',
                                 position: 'relative',
                                 overflow: 'hidden',
                                 border: '1px solid rgba(226, 232, 240, 0.8)',
                                 boxShadow: '0 10px 30px rgba(0,0,0,0.06)',
-                                cursor: 'pointer'
+                                cursor: 'pointer',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                gap: '1.25rem',
+                                flex: '1 1 300px',
+                                maxWidth: '380px'
                             }}
                         >
                             {/* Gradient Background Accent */}
-                            <motion.div
-                                whileHover={{ scale: 1.1 }}
-                                transition={{ duration: 0.3 }}
-                                style={{
-                                    position: 'absolute',
-                                    top: 0,
-                                    left: 0,
-                                    right: 0,
-                                    height: '5px',
-                                    background: item.gradient
-                                }}
-                            />
-
-                            {/* Glowing Background Effect */}
                             <div style={{
                                 position: 'absolute',
-                                top: '-50%',
-                                left: '-50%',
-                                width: '200%',
-                                height: '200%',
-                                background: item.gradient,
-                                opacity: 0.03,
-                                pointerEvents: 'none'
+                                top: 0,
+                                left: 0,
+                                right: 0,
+                                height: '6px',
+                                background: item.gradient
                             }} />
 
-                            <motion.div
-                                whileHover={{ rotate: 360, scale: 1.1 }}
-                                transition={{ duration: 0.6 }}
-                                style={{
-                                    width: '60px',
-                                    height: '60px',
-                                    borderRadius: '50%',
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                                <div style={{
+                                    width: '50px',
+                                    height: '50px',
+                                    borderRadius: '16px',
                                     background: item.gradient,
                                     color: 'white',
                                     display: 'flex',
                                     alignItems: 'center',
                                     justifyContent: 'center',
-                                    margin: '0 auto 1.5rem',
-                                    fontSize: '1.5rem',
-                                    position: 'relative',
-                                    boxShadow: `0 10px 25px ${item.shadowColor}`
-                                }}
-                            >
-                                {item.icon}
-                            </motion.div>
+                                    fontSize: '1.25rem',
+                                    boxShadow: `0 10px 20px ${item.shadowColor}`
+                                }}>
+                                    {item.icon}
+                                </div>
+                            </div>
 
-                            <h4 style={{
-                                fontSize: '1rem',
-                                fontWeight: 700,
-                                marginBottom: '0.75rem',
-                                color: 'var(--color-primary)',
-                                position: 'relative'
-                            }}>
-                                {item.label}
-                            </h4>
+                            <div>
+                                <h4 style={{
+                                    fontSize: '1.25rem',
+                                    fontWeight: 800,
+                                    marginBottom: '0.75rem',
+                                    color: 'var(--color-primary)'
+                                }}>
+                                    {item.label}
+                                </h4>
 
-                            <div style={{
-                                fontSize: '1.35rem',
-                                fontWeight: 900,
-                                background: item.gradient,
-                                WebkitBackgroundClip: 'text',
-                                WebkitTextFillColor: 'transparent',
-                                backgroundClip: 'text',
-                                position: 'relative'
-                            }}>
-                                {item.date}
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem', marginBottom: '1rem' }}>
+                                    <div style={{ fontSize: '0.8rem', fontWeight: 800, color: 'var(--color-text-muted)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                                        Schedule
+                                    </div>
+                                    <div style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--color-primary)' }}>
+                                        {item.startDate} — {item.endDate}
+                                    </div>
+                                </div>
+
+                                <p style={{ fontSize: '0.9rem', color: 'var(--color-text-muted)', lineHeight: 1.6, fontWeight: 500 }}>
+                                    {item.details}
+                                </p>
                             </div>
                         </motion.div>
                     ))}

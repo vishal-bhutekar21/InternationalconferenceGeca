@@ -33,7 +33,7 @@ const Tracks = () => {
             x: 0,
             scale: 1,
             transition: {
-                type: "spring",
+                type: "spring" as const,
                 stiffness: 100,
                 damping: 15
             }
@@ -41,7 +41,7 @@ const Tracks = () => {
     };
 
     return (
-        <section id="tracks" className="section" style={{ backgroundColor: '#FFFFFF', padding: '6rem 0' }}>
+        <section id="tracks" className="section" style={{ backgroundColor: 'var(--color-bg-soft-orange)', padding: '6rem 0' }}>
             <div className="container">
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
@@ -51,7 +51,7 @@ const Tracks = () => {
                     style={{ textAlign: 'center', marginBottom: '5rem' }}
                 >
                     <div className="badge">TOPICS</div>
-                    <h2 style={{ fontSize: '3rem', fontWeight: 800, marginTop: '1rem' }}>
+                    <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: 800, marginTop: '1rem' }}>
                         Conference <span style={{ color: 'var(--color-accent-orange)' }}>Tracks</span>
                     </h2>
                     <p style={{ maxWidth: '750px', margin: '1rem auto', color: 'var(--color-text-muted)', fontSize: '1.1rem' }}>
@@ -65,11 +65,13 @@ const Tracks = () => {
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.2 }}
                     style={{
-                        display: 'grid',
-                        gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
+                        display: 'flex',
+                        flexWrap: 'wrap',
                         gap: '1.25rem',
-                        marginBottom: '4rem'
+                        marginBottom: '4rem',
+                        justifyContent: 'center'
                     }}
+                    className="tracks-flex-container"
                 >
                     {allTracks.map((track, i) => (
                         <motion.div
@@ -92,7 +94,9 @@ const Tracks = () => {
                                 backgroundColor: 'white',
                                 cursor: 'pointer',
                                 position: 'relative',
-                                overflow: 'hidden'
+                                overflow: 'hidden',
+                                flex: '1 1 300px',
+                                maxWidth: '350px'
                             }}
                         >
                             {/* Animated gradient background on hover */}

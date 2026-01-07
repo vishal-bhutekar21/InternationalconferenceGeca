@@ -7,15 +7,13 @@ const NewsTicker = () => {
         <div style={{
             backgroundColor: 'var(--color-primary)',
             color: 'white',
-            padding: '0.5rem 0',
+            padding: '0.65rem 0',
             overflow: 'hidden',
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            right: 0,
-            zIndex: 1100,
+            position: 'relative',
+            zIndex: 10,
             fontSize: '0.85rem',
-            borderBottom: '1px solid rgba(255,255,255,0.1)'
+            borderBottom: '1px solid rgba(255,255,255,0.1)',
+            marginTop: '30px'
         }}>
             <div className="container" style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
                 <div style={{

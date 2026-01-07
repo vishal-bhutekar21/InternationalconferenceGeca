@@ -4,16 +4,16 @@ import { motion, AnimatePresence } from 'framer-motion';
 const GalleryPage = () => {
     const [filter, setFilter] = useState('All');
 
-    const categories = ['All', 'ICAISD 2025', 'Legacy ICAISD-24', 'Keynote Speakers', 'Networking'];
+    const categories = ['All', 'ICAISD 2026', 'Legacy ICAISD-24', 'Keynote Speakers', 'Networking'];
 
     const items = [
         { id: 1, category: 'Keynote Speakers', image: 'https://images.unsplash.com/photo-1475721027185-404ebc7743f2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', title: 'Session Highlights' },
         { id: 2, category: 'Networking', image: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', title: 'Break Conversations' },
-        { id: 3, category: 'ICAISD 2025', image: 'https://images.unsplash.com/photo-1431540015161-0bf868a2d407?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', title: 'GECA Campus' },
+        { id: 3, category: 'ICAISD 2026', image: 'https://images.unsplash.com/photo-1431540015161-0bf868a2d407?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', title: 'GECCS Campus' },
         { id: 4, category: 'Legacy ICAISD-24', image: 'https://images.unsplash.com/photo-1540575861501-7ce058a877c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', title: 'Inauguration 2024' },
         { id: 5, category: 'Networking', image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', title: 'Global Delegates' },
         { id: 6, category: 'Keynote Speakers', image: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', title: 'Expert Panels' },
-        { id: 7, category: 'ICAISD 2025', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', title: 'Auditorium' },
+        { id: 7, category: 'ICAISD 2026', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', title: 'Auditorium' },
         { id: 8, category: 'Networking', image: 'https://images.unsplash.com/photo-1528605248644-14dd04cb2201?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', title: 'Collaborations' }
     ];
 
@@ -27,7 +27,7 @@ const GalleryPage = () => {
                         <div className="badge">VISUAL ARCHIVE</div>
                         <h1 style={{ fontSize: '4rem', fontWeight: 800, margin: '1rem 0' }}>Gallery & <span style={{ color: 'var(--color-accent-orange)' }}>Highlights</span></h1>
                         <p style={{ maxWidth: '700px', margin: '0 auto', color: 'var(--color-text-muted)' }}>
-                            Capturing moments of innovation at Government College of Engineering Aurangabad. Explore our visual archive from past and present events.
+                            Capturing moments of innovation at Government College of Engineering, (Aurangabad) Chhatrapati Sambhajinagar. Explore our visual archive from past and present events.
                         </p>
                     </div>
 
@@ -55,7 +55,13 @@ const GalleryPage = () => {
 
                     <motion.div
                         layout
-                        style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '2rem' }}
+                        style={{
+                            display: 'flex',
+                            flexWrap: 'wrap',
+                            gap: '2rem',
+                            justifyContent: 'center'
+                        }}
+                        className="gallery-flex-container"
                     >
                         <AnimatePresence>
                             {filteredItems.map(item => (
@@ -67,7 +73,13 @@ const GalleryPage = () => {
                                     exit={{ opacity: 0, scale: 0.9 }}
                                     transition={{ duration: 0.3 }}
                                     className="card-glass"
-                                    style={{ padding: 0, overflow: 'hidden', cursor: 'pointer' }}
+                                    style={{
+                                        padding: 0,
+                                        overflow: 'hidden',
+                                        cursor: 'pointer',
+                                        flex: '1 1 300px',
+                                        maxWidth: '400px'
+                                    }}
                                     whileHover={{ y: -5 }}
                                 >
                                     <div style={{ height: '250px', position: 'relative' }}>

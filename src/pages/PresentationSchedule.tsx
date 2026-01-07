@@ -48,7 +48,16 @@ const PresentationSchedule = () => {
                                 style={{ padding: 0, overflow: 'hidden', backgroundColor: 'white' }}
                                 whileHover={{ borderColor: 'var(--color-accent-orange)' }}
                             >
-                                <div style={{ backgroundColor: 'var(--color-primary)', color: 'white', padding: '1.5rem 3rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                                <div style={{
+                                    backgroundColor: 'var(--color-primary)',
+                                    color: 'white',
+                                    padding: '1.5rem clamp(1rem, 3vw, 3rem)',
+                                    display: 'flex',
+                                    flexWrap: 'wrap',
+                                    justifyContent: 'space-between',
+                                    alignItems: 'center',
+                                    gap: '1rem'
+                                }}>
                                     <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                                         <FaClock color="var(--color-accent-orange)" />
                                         <span style={{ fontWeight: 800, fontSize: '1.1rem' }}>{session.time}</span>

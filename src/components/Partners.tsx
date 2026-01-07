@@ -14,7 +14,7 @@ const Partners = () => {
     ];
 
     return (
-        <section className="section" style={{ backgroundColor: '#F8FAFC' }}>
+        <section className="section" style={{ backgroundColor: 'var(--color-bg-soft-green)', padding: '6rem 0' }}>
             <div className="container">
                 <div className="section-title-wrapper">
                     <h2 className="section-title">Publishing <span style={{ borderBottom: '4px solid var(--color-accent-orange)' }}>Partners</span></h2>
@@ -31,12 +31,12 @@ const Partners = () => {
                     style={{ padding: '4rem', backgroundColor: 'white' }}
                 >
                     <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: 'repeat(4, 1fr)',
+                        display: 'flex',
+                        flexWrap: 'wrap',
                         gap: '3rem',
                         alignItems: 'center',
-                        justifyItems: 'center'
-                    }}>
+                        justifyContent: 'center'
+                    }} className="partners-flex-grid">
                         {partners.map((p, i) => (
                             <motion.div
                                 key={i}
@@ -53,7 +53,9 @@ const Partners = () => {
                                     fontSize: '1.25rem',
                                     fontWeight: 700,
                                     color: '#9CA3AF',
-                                    border: '1px solid #E5E7EB'
+                                    border: '1px solid #E5E7EB',
+                                    flex: '1 1 200px',
+                                    maxWidth: '250px'
                                 }}
                             >
                                 {/* Placeholder for real logos */}

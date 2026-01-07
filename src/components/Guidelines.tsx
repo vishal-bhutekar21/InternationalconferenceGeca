@@ -11,12 +11,17 @@ const Guidelines = () => {
     ];
 
     return (
-        <section className="section" style={{ backgroundColor: '#F8FAFC', padding: '6rem 0' }}>
+        <section className="section" style={{ backgroundColor: 'var(--color-bg-soft-slate)', padding: '6rem 0' }}>
             <div className="container">
-                <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '5rem' }}>
-                    <div>
+                <div style={{
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                    gap: '5rem',
+                    justifyContent: 'space-between'
+                }} className="guidelines-flex-container">
+                    <div style={{ flex: '1 1 500px' }}>
                         <div className="badge">SUBMISSION</div>
-                        <h2 style={{ fontSize: '2.5rem', fontWeight: 800, margin: '1rem 0 2rem' }}>Author <span style={{ color: 'var(--color-accent-orange)' }}>Guidelines</span></h2>
+                        <h2 style={{ fontSize: 'clamp(2rem, 5vw, 2.5rem)', fontWeight: 800, margin: '1rem 0 2rem' }}>Author <span style={{ color: 'var(--color-accent-orange)' }}>Guidelines</span></h2>
 
                         <div style={{ marginBottom: '3rem' }}>
                             <h4 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '1rem' }}>Template & Format</h4>
@@ -43,12 +48,12 @@ const Guidelines = () => {
                         </div>
                     </div>
 
-                    <div>
+                    <div style={{ flex: '1 1 400px' }}>
                         <motion.div
                             initial={{ opacity: 0, x: 30 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             className="card-glass"
-                            style={{ padding: '3rem', backgroundColor: 'var(--color-primary)', color: 'white', borderRadius: '32px' }}
+                            style={{ padding: 'clamp(1.5rem, 5vw, 3rem)', backgroundColor: 'var(--color-primary)', color: 'white', borderRadius: '32px' }}
                         >
                             <h3 style={{ fontSize: '1.75rem', color: 'white', marginBottom: '1.5rem' }}>Ready to Submit?</h3>
                             <p style={{ opacity: 0.8, marginBottom: '2rem', lineHeight: 1.8 }}>
@@ -63,6 +68,19 @@ const Guidelines = () => {
                         </motion.div>
                     </div>
                 </div>
+
+                <style>{`
+                    @media (max-width: 1024px) {
+                        .guidelines-flex-container {
+                            flex-direction: column !important;
+                            gap: 3rem !important;
+                        }
+                        .guidelines-flex-container > div {
+                            flex: 1 1 auto !important;
+                            width: 100%;
+                        }
+                    }
+                `}</style>
             </div>
         </section>
     );

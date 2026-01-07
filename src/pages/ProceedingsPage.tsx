@@ -20,32 +20,55 @@ const ProceedingsPage = () => {
                         </p>
                     </div>
 
-                    <div className="card-glass" style={{ padding: '3rem', marginBottom: '5rem', display: 'grid', gridTemplateColumns: '1.5fr 1fr', gap: '4rem', alignItems: 'center' }}>
-                        <div>
+                    <div className="card-glass spotlight-flex" style={{
+                        padding: 'clamp(2rem, 5vw, 3.5rem)',
+                        marginBottom: '5rem',
+                        display: 'flex',
+                        flexWrap: 'wrap',
+                        gap: '4rem',
+                        alignItems: 'center'
+                    }}>
+                        <div style={{ flex: '1 1 450px' }}>
                             <div className="badge" style={{ marginBottom: '1rem' }}>SUBMISSIONS OPEN</div>
-                            <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>ICAISD 2025</h2>
+                            <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', marginBottom: '1.5rem' }}>ICAISD 2026</h2>
                             <p style={{ color: 'var(--color-text-muted)', lineHeight: 1.8, marginBottom: '2rem' }}>
-                                The 4th edition will be held at GECA. Accepted papers will be published in the prestigious <strong>Springer "LNEE" series</strong> and submitted for indexing in Scopus and IEEE Xplore.
+                                The 4th edition will be held at GECCS. Accepted papers will be published in the prestigious <strong>Springer "LNEE" series</strong> and submitted for indexing in Scopus and IEEE Xplore.
                             </p>
-                            <div style={{ display: 'flex', gap: '1rem' }}>
+                            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                                 <button className="btn btn-orange">Submit Manuscript</button>
                                 <button className="btn btn-outline">Submission Guidelines</button>
                             </div>
                         </div>
-                        <div style={{ borderRadius: '20px', overflow: 'hidden', boxShadow: 'var(--shadow-lg)' }}>
-                            <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Code" style={{ width: '100%' }} />
+                        <div style={{
+                            borderRadius: '20px',
+                            overflow: 'hidden',
+                            boxShadow: 'var(--shadow-lg)',
+                            flex: '1 1 350px'
+                        }}>
+                            <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Code" style={{ width: '100%', display: 'block' }} />
                         </div>
                     </div>
 
                     <h2 style={{ fontSize: '2rem', marginBottom: '2.5rem', borderLeft: '4px solid var(--color-accent-orange)', paddingLeft: '1.5rem' }}>Archives <span style={{ fontSize: '1rem', color: 'var(--color-text-muted)', fontWeight: 400 }}>(3 Editions)</span></h2>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2.5rem', marginBottom: '5rem' }}>
+                    <div className="archives-flex" style={{
+                        display: 'flex',
+                        flexWrap: 'wrap',
+                        gap: '2.5rem',
+                        marginBottom: '5rem',
+                        justifyContent: 'center'
+                    }}>
                         {archives.map((item, i) => (
                             <motion.div
                                 key={i}
                                 whileHover={{ y: -10 }}
                                 className="card-glass"
-                                style={{ overflow: 'hidden', padding: 0 }}
+                                style={{
+                                    overflow: 'hidden',
+                                    padding: 0,
+                                    flex: '1 1 300px',
+                                    maxWidth: '400px'
+                                }}
                             >
                                 <div style={{ height: '200px', overflow: 'hidden' }}>
                                     <img src={item.image} alt={item.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />

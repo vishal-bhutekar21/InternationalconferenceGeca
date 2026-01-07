@@ -19,13 +19,18 @@ import GalleryPage from './pages/GalleryPage';
 import LoginPage from './pages/LoginPage';
 import AccommodationPage from './pages/AccommodationPage';
 import PresentationSchedule from './pages/PresentationSchedule';
+import GuidelinesPage from './pages/GuidelinesPage';
+import PublishIndexingPage from './pages/PublishIndexingPage';
+import PublishingPartnersPage from './pages/PublishingPartnersPage';
+import PresentationGuidelinesPage from './pages/PresentationGuidelinesPage';
+import AdvisoryBoardPage from './pages/AdvisoryBoardPage';
 
 function App() {
   return (
-    <div className="app-container" style={{ paddingTop: '36px' }}>
+    <div className="app-container">
       <ScrollToTop />
-      <NewsTicker />
       <Navbar />
+      <NewsTicker />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutPage />} />
@@ -35,6 +40,11 @@ function App() {
         <Route path="/speakers" element={<SpeakersPage />} />
         <Route path="/venue" element={<VenuePage />} />
         <Route path="/proceedings" element={<ProceedingsPage />} />
+        <Route path="/publish-indexing" element={<PublishIndexingPage />} />
+        <Route path="/publishing-partners" element={<PublishingPartnersPage />} />
+        <Route path="/presentation-guidelines" element={<PresentationGuidelinesPage />} />
+        <Route path="/advisory-board" element={<AdvisoryBoardPage />} />
+        <Route path="/guidelines" element={<GuidelinesPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/registration" element={<RegistrationPage />} />
         <Route path="/gallery" element={<GalleryPage />} />

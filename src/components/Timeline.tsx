@@ -33,11 +33,11 @@ const Timeline = () => {
     };
 
     const gradients = [
-        "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-        "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-        "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-        "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
-        "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)"
+        "linear-gradient(135deg, #F97316 0%, #FB923C 100%)",
+        "linear-gradient(135deg, #FB923C 0%, #F97316 100%)",
+        "linear-gradient(135deg, #F97316 0%, #EA580C 100%)",
+        "linear-gradient(135deg, #EA580C 0%, #F97316 100%)",
+        "linear-gradient(135deg, #F97316 0%, #FB923C 100%)"
     ];
 
     const getIcon = (index: number) => {
@@ -159,7 +159,7 @@ const Timeline = () => {
                         maxWidth: '700px',
                         margin: '0 auto'
                     }}>
-                        Follow the key milestones leading up to ICAISD 2025
+                        Follow the key milestones leading up to ICAISD 2026
                     </p>
                 </motion.div>
 
@@ -180,7 +180,7 @@ const Timeline = () => {
                             top: '0',
                             bottom: '0',
                             width: '3px',
-                            background: 'linear-gradient(180deg, transparent, rgba(251, 146, 60, 0.5), transparent)',
+                            background: 'rgba(251, 146, 60, 0.3)',
                             transformOrigin: 'top',
                             transform: 'translateX(-50%)'
                         }}
@@ -202,12 +202,14 @@ const Timeline = () => {
                                     key={milestone.id}
                                     variants={itemVariants}
                                     style={{
-                                        display: 'grid',
-                                        gridTemplateColumns: isLeft ? '1fr auto 1fr' : '1fr auto 1fr',
+                                        display: 'flex',
+                                        flexDirection: 'column',
                                         gap: '2rem',
                                         marginBottom: index === timelineMilestones.length - 1 ? '0' : '4rem',
-                                        alignItems: 'center'
+                                        alignItems: 'center',
+                                        position: 'relative'
                                     }}
+                                    className="timeline-item-flex"
                                 >
                                     {/* Content Card */}
                                     <motion.div
@@ -216,7 +218,6 @@ const Timeline = () => {
                                             boxShadow: `0 20px 60px rgba(251, 146, 60, 0.2)`
                                         }}
                                         style={{
-                                            gridColumn: isLeft ? '1' : '3',
                                             padding: '2.5rem',
                                             background: 'rgba(255, 255, 255, 0.05)',
                                             backdropFilter: 'blur(20px)',
@@ -224,7 +225,12 @@ const Timeline = () => {
                                             border: '1px solid rgba(255, 255, 255, 0.1)',
                                             borderRadius: '24px',
                                             position: 'relative',
-                                            overflow: 'hidden'
+                                            overflow: 'hidden',
+                                            width: '100%',
+                                            maxWidth: '450px',
+                                            alignSelf: isLeft ? 'flex-start' : 'flex-end',
+                                            marginLeft: isLeft ? '0' : 'auto',
+                                            marginRight: isLeft ? 'auto' : '0'
                                         }}
                                     >
                                         {/* Gradient Top Border */}
@@ -306,7 +312,6 @@ const Timeline = () => {
                                             scale: 1.2
                                         }}
                                         style={{
-                                            gridColumn: '2',
                                             width: '60px',
                                             height: '60px',
                                             borderRadius: '50%',
@@ -317,16 +322,17 @@ const Timeline = () => {
                                             color: 'white',
                                             fontSize: '1.5rem',
                                             boxShadow: `0 0 0 8px rgba(15, 23, 42, 1), 0 0 0 12px rgba(251, 146, 60, 0.2)`,
-                                            position: 'relative',
+                                            position: 'absolute',
+                                            left: '50%',
+                                            top: '50%',
+                                            transform: 'translate(-50%, -50%)',
                                             zIndex: 2,
                                             cursor: 'pointer'
                                         }}
+                                        className="timeline-center-icon"
                                     >
                                         {getIcon(index)}
                                     </motion.div>
-
-                                    {/* Empty space for alignment */}
-                                    <div style={{ gridColumn: isLeft ? '3' : '1' }} />
                                 </motion.div>
                             );
                         })}

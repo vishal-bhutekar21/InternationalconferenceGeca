@@ -3,8 +3,8 @@ import { FaCalendarAlt, FaClock, FaMapMarkerAlt, FaMicrophone } from 'react-icon
 
 const SchedulePage = () => {
     const days = [
-        { id: 1, label: "Day 01", date: "Friday, Dec 19, 2025", active: true },
-        { id: 2, label: "Day 02", date: "Saturday, Dec 20, 2025", active: false }
+        { id: 1, label: "Day 01", date: "Friday, Dec 19, 2026", active: true },
+        { id: 2, label: "Day 02", date: "Saturday, Dec 20, 2026", active: false }
     ];
 
     const timeline = [
@@ -27,7 +27,7 @@ const SchedulePage = () => {
                     <div className="badge">CONFERENCE AGENDA</div>
                     <h1 style={{ fontSize: '4rem', fontWeight: 800, margin: '1rem 0' }}>Program <span style={{ color: 'var(--color-accent-orange)' }}>Schedule</span></h1>
                     <p style={{ maxWidth: '700px', margin: '0 auto 3rem', color: 'var(--color-text-muted)' }}>
-                        Explore the timeline of events, keynote sessions, and technical tracks planned for ICAISD 2025 at GECA.
+                        Explore the timeline of events, keynote sessions, and technical tracks planned for ICAISD 2026 at GECCS.
                     </p>
 
                     <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', marginBottom: '4rem' }}>
@@ -35,14 +35,14 @@ const SchedulePage = () => {
                             <FaCalendarAlt color="var(--color-accent-orange)" />
                             <div style={{ textAlign: 'left' }}>
                                 <div style={{ fontSize: '0.7rem', fontWeight: 700, color: 'var(--color-text-muted)' }}>DATES</div>
-                                <div style={{ fontWeight: 700 }}>19-20 December 2025</div>
+                                <div style={{ fontWeight: 700 }}>19-20 December 2026</div>
                             </div>
                         </div>
                         <div style={{ padding: '1rem 2rem', backgroundColor: 'white', borderRadius: '12px', boxShadow: 'var(--shadow-sm)', display: 'flex', alignItems: 'center', gap: '1rem' }}>
                             <FaMapMarkerAlt color="var(--color-accent-orange)" />
                             <div style={{ textAlign: 'left' }}>
                                 <div style={{ fontSize: '0.7rem', fontWeight: 700, color: 'var(--color-text-muted)' }}>VENUE</div>
-                                <div style={{ fontWeight: 700 }}>GECA Main Campus</div>
+                                <div style={{ fontWeight: 700 }}>GECCS Main Campus</div>
                             </div>
                         </div>
                     </div>
@@ -100,9 +100,19 @@ const SchedulePage = () => {
                                         </div>
                                     )}
                                     {item.tracks && (
-                                        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginTop: '1.5rem' }}>
+                                        <div style={{
+                                            display: 'flex',
+                                            flexWrap: 'wrap',
+                                            gap: '1.5rem',
+                                            marginTop: '1.5rem'
+                                        }}>
                                             {item.tracks.map((t, i) => (
-                                                <div key={i} style={{ padding: '1rem', backgroundColor: '#F8FAFC', borderRadius: '8px' }}>
+                                                <div key={i} style={{
+                                                    padding: '1rem',
+                                                    backgroundColor: '#F8FAFC',
+                                                    borderRadius: '8px',
+                                                    flex: '1 1 200px'
+                                                }}>
                                                     <div style={{ fontSize: '0.85rem', fontWeight: 700, marginBottom: '0.5rem' }}>{t.name}</div>
                                                     <div style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)' }}>Room: {t.room}</div>
                                                 </div>
