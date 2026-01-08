@@ -163,13 +163,15 @@ const Timeline = () => {
                     </p>
                 </motion.div>
 
-                <div style={{
+                <div className="timeline-container" style={{
                     position: 'relative',
-                    maxWidth: '900px',
-                    margin: '0 auto'
+                    maxWidth: '1000px',
+                    margin: '0 auto',
+                    padding: '0 1rem'
                 }}>
-                    {/* Vertical Animated Line */}
+                    {/* Vertical Animated Line - Hidden on Mobile */}
                     <motion.div
+                        className="timeline-line"
                         initial={{ scaleY: 0 }}
                         whileInView={{ scaleY: 1 }}
                         viewport={{ once: true }}
@@ -190,7 +192,7 @@ const Timeline = () => {
                         variants={containerVariants}
                         initial="hidden"
                         whileInView="visible"
-                        viewport={{ once: true, amount: 0.2 }}
+                        viewport={{ once: true, amount: 0.1 }}
                         style={{ position: 'relative' }}
                     >
                         {timelineMilestones.map((milestone, index) => {
@@ -201,36 +203,24 @@ const Timeline = () => {
                                 <motion.div
                                     key={milestone.id}
                                     variants={itemVariants}
-                                    style={{
-                                        display: 'flex',
-                                        flexDirection: 'column',
-                                        gap: '2rem',
-                                        marginBottom: index === timelineMilestones.length - 1 ? '0' : '12rem',
-                                        alignItems: 'center',
-                                        position: 'relative'
-                                    }}
-                                    className="timeline-item-flex"
+                                    className={`timeline-item ${isLeft ? 'left' : 'right'}`}
                                 >
                                     {/* Content Card */}
                                     <motion.div
                                         whileHover={{
-                                            scale: 1.05,
+                                            scale: 1.02,
                                             boxShadow: `0 20px 60px rgba(251, 146, 60, 0.2)`
                                         }}
+                                        className="timeline-card"
                                         style={{
-                                            padding: '3.5rem 2.5rem',
+                                            padding: '2.5rem',
                                             background: 'rgba(255, 255, 255, 0.05)',
                                             backdropFilter: 'blur(20px)',
                                             WebkitBackdropFilter: 'blur(20px)',
                                             border: '1px solid rgba(255, 255, 255, 0.1)',
                                             borderRadius: '24px',
                                             position: 'relative',
-                                            overflow: 'hidden',
-                                            width: '100%',
-                                            maxWidth: '500px',
-                                            alignSelf: isLeft ? 'flex-start' : 'flex-end',
-                                            marginLeft: isLeft ? '0' : 'auto',
-                                            marginRight: isLeft ? 'auto' : '0'
+                                            overflow: 'hidden'
                                         }}
                                     >
                                         {/* Gradient Top Border */}
@@ -326,10 +316,6 @@ const Timeline = () => {
                                             color: 'white',
                                             fontSize: '1.5rem',
                                             boxShadow: `0 0 0 8px rgba(15, 23, 42, 1), 0 0 0 12px rgba(251, 146, 60, 0.2)`,
-                                            position: 'absolute',
-                                            left: '50%',
-                                            top: '50%',
-                                            transform: 'translate(-50%, -50%)',
                                             zIndex: 2,
                                             cursor: 'pointer'
                                         }}
@@ -342,6 +328,52 @@ const Timeline = () => {
                         })}
                     </motion.div>
                 </div>
+
+                <style>{`
+                    .timeline-item {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 6rem;
+                        position: relative;
+                        width: 100%;
+                    }
+                    .timeline-item.left {
+                        flex-direction: row;
+                    }
+                    .timeline-item.right {
+                        flex-direction: row-reverse;
+                    }
+                    .timeline-card {
+                        width: 45%;
+                    }
+                    .timeline-center-icon {
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    
+                    @media (max-width: 768px) {
+                        .timeline-line {
+                            left: 30px !important;
+                            transform: none !important;
+                        }
+                        .timeline-item {
+                            flex-direction: column !important;
+                            align-items: flex-start !important;
+                            margin-bottom: 4rem !important;
+                            padding-left: 80px;
+                        }
+                        .timeline-card {
+                            width: 100% !important;
+                        }
+                        .timeline-center-icon {
+                            left: 30px !important;
+                            top: 0 !important;
+                            transform: translateX(-50%) !important;
+                        }
+                    }
+                `}</style>
             </div>
         </section>
     );

@@ -205,7 +205,7 @@ const ContactPage = () => {
                             >
                                 <div style={{ height: '200px', backgroundColor: '#e2e8f0' }}>
                                     <img
-                                        src="https://www.lemontreehotels.com/uploads/hotel_images/67_hotel_slider_mobile_1.jpg"
+                                        src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                                         alt="Lemon Tree Hotel"
                                         style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                                         onError={(e) => { e.currentTarget.src = 'https://placehold.co/600x400?text=Lemon+Tree+Hotel' }}
@@ -239,7 +239,7 @@ const ContactPage = () => {
                             >
                                 <div style={{ height: '200px', backgroundColor: '#e2e8f0' }}>
                                     <img
-                                        src="https://www.gingerhotels.com/resourcefiles/hotelprofile/aurangabad-th.jpg"
+                                        src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                                         alt="Ginger Hotel"
                                         style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                                         onError={(e) => { e.currentTarget.src = 'https://placehold.co/600x400?text=Ginger+Hotel' }}
