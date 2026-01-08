@@ -27,7 +27,7 @@ const AdvisoryBoardPage = () => {
                     <div className="badge" style={{ marginBottom: '1rem' }}>EXPERTISE</div>
                     <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 3.5rem)', fontWeight: 800, color: 'var(--color-primary)' }}>Advisory <span style={{ color: 'var(--color-accent-orange)' }}>Board</span></h1>
                     <p style={{ color: 'var(--color-text-muted)', maxWidth: '600px', margin: '1rem auto' }}>
-                        Guiding ICAISDG 2026 with global academic and industry perspective.
+                        Guiding ICAISG2026 with global academic and industry perspective.
                     </p>
                 </motion.div>
 

@@ -31,14 +31,14 @@ export const navigationItems: NavItem[] = [
 ];
 
 export const conferenceConfig: ConferenceConfig = {
-    title: "ICAISDG 26",
-    fullName: "2nd International Conference on Artificial Intelligence and Sustainable Development",
+    title: "ICAISG2026",
+    fullName: "International Conference on Artificial Intelligence (AI) for Sustainable Growth",
     date: "August 27-28, 2026",
     venue: "Government College Of Engineering, Aurangabad, Chh. Sambhajinagar", // Updated venue text
     theme: "Sustainable Future through AI Innovation",
     heroImage: "/images/geca-building.jpg",
     logo: "/logos/geca-official-logo.png",
-    description: "ICAISDG 26 aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Artificial Intelligence and Sustainable Development. Organized by Government College Of Engineering, Aurangabad, Chh. Sambhajinagar, Center Of Excellence, Electronics & Telecommunication Department."
+    description: "ICAISG2026 aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Artificial Intelligence (AI) for Sustainable Growth. Organized by Government College Of Engineering, Aurangabad, Chh. Sambhajinagar, Center Of Excellence, Electronics & Telecommunication Department."
 };
 
 export const gecaStats: GECAStat[] = [

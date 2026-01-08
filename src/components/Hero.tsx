@@ -46,7 +46,7 @@ const Hero = () => {
                         <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', backgroundColor: 'var(--color-orange-soft)', padding: '0.5rem 1rem', borderRadius: '50px', marginBottom: '2rem' }}>
                             <div className="pulse-dot" />
                             <span style={{ fontSize: '0.75rem', fontWeight: 800, color: 'var(--color-accent-orange)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                                ICAISDG 26 • Call for Papers
+                                ICAISG2026 • Call for Papers
                             </span>
                         </div>
 
@@ -76,7 +76,7 @@ const Hero = () => {
                             maxWidth: '680px',
                             fontWeight: 500
                         }}>
-                            The <span style={{ color: 'var(--color-primary)', fontWeight: 700 }}>International Conference on Artificial Intelligence and Sustainable Development (ICAISDG 26)</span> is a premier platform for global researchers, hosted by <span style={{ color: 'var(--color-primary)', fontWeight: 700 }}>Centre of Excellence, E&TC, Government College of Engineering, Chhatrapati Sambhajinagar</span>. Join us for a transformative exchange of ideas in technical innovation and environmental stewardship.
+                            The <span style={{ color: 'var(--color-primary)', fontWeight: 700 }}>International Conference on Artificial Intelligence (AI) for Sustainable Growth (ICAISG2026)</span> is a premier platform for global researchers, hosted by <span style={{ color: 'var(--color-primary)', fontWeight: 700 }}>Centre of Excellence, E&TC, Government College of Engineering, Chhatrapati Sambhajinagar</span>. Join us for a transformative exchange of ideas in technical innovation and environmental stewardship.
                         </p>
 
                         <div style={{ display: 'flex', gap: '1.25rem', marginBottom: '3.5rem', flexWrap: 'wrap' }}>

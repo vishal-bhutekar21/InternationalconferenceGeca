@@ -16,7 +16,7 @@ const ProceedingsPage = () => {
                         <div className="badge">CONFERENCE ARCHIVE</div>
                         <h1 style={{ fontSize: '4rem', fontWeight: 800, margin: '1rem 0' }}>Conference <span style={{ color: 'var(--color-accent-orange)' }}>Proceedings</span></h1>
                         <p style={{ maxWidth: '700px', margin: '0 auto', color: 'var(--color-text-muted)' }}>
-                            A complete archive of research contributions and technical papers from the International Conference on Artificial Intelligence and Sustainable Development.
+                            A complete archive of research contributions and technical papers from the International Conference on Artificial Intelligence (AI) for Sustainable Growth.
                         </p>
                     </div>
 
@@ -30,7 +30,7 @@ const ProceedingsPage = () => {
                     }}>
                         <div style={{ flex: '1 1 450px' }}>
                             <div className="badge" style={{ marginBottom: '1rem' }}>SUBMISSIONS OPEN</div>
-                            <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', marginBottom: '1.5rem' }}>ICAISD 2026</h2>
+                            <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', marginBottom: '1.5rem' }}>ICAISG2026</h2>
                             <p style={{ color: 'var(--color-text-muted)', lineHeight: 1.8, marginBottom: '2rem' }}>
                                 The 4th edition will be held at GECCS. Accepted papers will be published in the prestigious <strong>Springer "LNEE" series</strong> and submitted for indexing in Scopus and IEEE Xplore.
                             </p>

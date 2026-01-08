@@ -46,7 +46,7 @@ const CountdownTimer = () => {
                     <div className="badge">CONFERENCE COUNTDOWN</div>
                     <div style={{ fontSize: '1.25rem', fontWeight: 600, color: 'var(--color-text-muted)' }}>August 27-28, 2026</div>
                     <h2 style={{ fontSize: '3rem', fontWeight: 800, marginTop: '1rem', marginBottom: '1rem' }}>
-                        Time Until <span style={{ color: 'var(--color-accent-orange)' }}>ICAISDG 26</span>
+                        Time Until <span style={{ color: 'var(--color-accent-orange)' }}>ICAISG2026</span>
                     </h2>
                     <p style={{ color: 'var(--color-text-muted)', fontSize: '1.1rem' }}>
                         August 27-28, 2026 | GECCS (Aurangabad) Chhatrapati Sambhajinagar

@@ -11,7 +11,7 @@ const ContactPage = () => {
                         <div className="badge">SUPPORT & INQUIRIES</div>
                         <h1 style={{ fontSize: '4rem', fontWeight: 800, margin: '1rem 0' }}>Get in <span style={{ color: 'var(--color-accent-orange)' }}>Touch</span></h1>
                         <p style={{ maxWidth: '600px', margin: '0 auto', color: 'var(--color-text-muted)' }}>
-                            We are here to assist you with any questions regarding paper submission, registration, or sponsorship for the ICAISDG 26 conference.
+                            We are here to assist you with any questions regarding paper submission, registration, or sponsorship for the ICAISG2026 conference.
                         </p>
                     </div>
 
