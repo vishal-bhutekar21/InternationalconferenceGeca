@@ -67,7 +67,7 @@ export const timelineMilestones: TimelineMilestone[] = [
     },
     {
         id: 3,
-        date: "Dates to be announced soon",
+        date: "16 Sep 2026 — 30 Sep 2026",
         label: "Camera Ready",
         title: "Camera Ready",
         description: "Final manuscript submission and copyright form completion.",
@@ -75,7 +75,7 @@ export const timelineMilestones: TimelineMilestone[] = [
     },
     {
         id: 4,
-        date: "Dates to be announced soon",
+        date: "01 Oct 2026 — 15 Oct 2026",
         label: "Registration",
         title: "Registration",
         description: "Deadline for conference registration and fee payment.",
@@ -83,7 +83,7 @@ export const timelineMilestones: TimelineMilestone[] = [
     },
     {
         id: 5,
-        date: "Dates to be announced soon",
+        date: "20 Dec 2026 — 21 Dec 2026",
         label: "Main Event",
         title: "Main Event",
         description: "Technical sessions, keynotes, and sustainable networking at GECCS.",

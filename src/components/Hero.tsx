@@ -151,7 +151,7 @@ const Hero = () => {
                                     letterSpacing: '0.1em'
                                 }}>Conference Theme</div>
                                 <div style={{ fontSize: '1.5rem', fontWeight: 900, color: 'var(--color-primary)', lineHeight: 1.2, letterSpacing: '-0.02em' }}>
-                                    Building Sustainable Futures <br />Through <span style={{ color: 'var(--color-accent-orange)' }}>AI Innovation</span>
+                                    Building Sustainable Futures <br />Through <span style={{ color: 'var(--color-accent-orange)' }}>AI Innovation</span> for sustainable development growth
                                 </div>
                             </div>
                         </div>
