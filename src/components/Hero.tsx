@@ -111,27 +111,24 @@ const Hero = () => {
                         style={{ position: 'relative', flex: '1 1 450px' }}
                         className="hero-image-container"
                     >
-                        <div style={{
-                            borderRadius: '48px',
-                            overflow: 'hidden',
-                            boxShadow: '0 50px 100px rgba(0,0,0,0.12)',
-                            aspectRatio: '1/1',
-                            border: '1px solid rgba(255,255,255,0.4)',
-                            position: 'relative'
-                        }}>
-                            <img
-                                src="/images/geca-drone.jpg"
-                                alt="GECCS Campus"
-                                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                            />
+                        <div style={{ position: 'relative' }}>
+                            <div style={{
+                                borderRadius: '48px',
+                                overflow: 'hidden',
+                                boxShadow: '0 50px 100px rgba(0,0,0,0.12)',
+                                aspectRatio: '1/1',
+                                border: '1px solid rgba(255,255,255,0.4)',
+                                position: 'relative'
+                            }} className="hero-img-wrapper">
+                                <img
+                                    src="/images/geca-drone.jpg"
+                                    alt="GECCS Campus"
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                />
+                            </div>
 
                             {/* Overlay Card - Refined Layout */}
-                            {/* Overlay Card - Refined Layout */}
                             <div style={{
-                                position: 'absolute',
-                                bottom: '1.5rem',
-                                left: '1.5rem',
-                                right: '1.5rem',
                                 backgroundColor: 'rgba(255, 255, 255, 0.9)',
                                 backdropFilter: 'blur(12px)',
                                 borderRadius: '20px',
@@ -208,6 +205,12 @@ const Hero = () => {
                     border-radius: 50%;
                     animation: pulse 2s infinite;
                 }
+                .hero-overlay-card {
+                    position: absolute;
+                    bottom: 1.5rem;
+                    left: 1.5rem;
+                    right: 1.5rem;
+                }
                 @keyframes pulse {
                     0% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.7); }
                     70% { box-shadow: 0 0 0 10px rgba(249, 115, 22, 0); }
@@ -236,11 +239,24 @@ const Hero = () => {
                     }
                 }
                 @media (max-width: 767px) {
+                    .hero-image-container {
+                        max-width: 100% !important;
+                        padding: 0 1rem;
+                    }
+                    /* On mobile, move card below image */
                     .hero-overlay-card {
-                        padding: 1.25rem !important;
-                        bottom: 1rem !important;
-                        left: 1rem !important;
-                        right: 1rem !important;
+                        position: relative !important;
+                        bottom: auto !important;
+                        left: auto !important;
+                        right: auto !important;
+                        margin-top: 1.5rem;
+                        transform: none !important;
+                    }
+                    /* Adjust image container slightly */
+                    .hero-img-wrapper {
+                        border-radius: 32px !important;
+                        max-width: 400px;
+                        margin: 0 auto;
                     }
                     /* Disable fixed background on mobile to ensure proper scaling */
                     .hero-section-bg {
@@ -252,6 +268,5 @@ const Hero = () => {
         </section >
     );
 };
-
 
 export default Hero;
