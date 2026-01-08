@@ -49,8 +49,8 @@ const ContactPage = () => {
                                     <div>
                                         <h3 style={{ fontSize: '1.1rem', marginBottom: '0.25rem' }}>Email Support</h3>
                                         <p style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)' }}>
-                                            General: info@icaisd2026.geccs.ac.in<br />
-                                            Technical: tech@icaisd2026.geccs.ac.in
+                                            General: info.caisdg@geca.ac.in<br />
+                                            Technical: tech.caisdg@geca.ac.in
                                         </p>
                                     </div>
                                 </div>
