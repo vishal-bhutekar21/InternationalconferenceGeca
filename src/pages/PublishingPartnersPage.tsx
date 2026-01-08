@@ -3,24 +3,32 @@ import { motion } from 'framer-motion';
 const PublishingPartnersPage = () => {
     const categories = [
         {
-            title: "Diamond Partners",
-            partners: [
-                { id: 1, name: "Springer", logo: "/logos/springer-logo.png", description: "Global publishing partner for high-impact research." },
-                { id: 2, name: "IEEE", logo: "/logos/ieee-logo.png", description: "Technical co-sponsor for computational intelligence tracks." }
-            ]
-        },
-        {
             title: "Academic Partners",
             partners: [
-                { id: 3, name: "GECCS, (Aurangabad) Chhatrapati Sambhajinagar", logo: "/logos/geca-official-logo.png", description: "Host institution and primary academic patron." },
-                { id: 4, name: "DTE Maharashtra", logo: "/logos/dte-logo.gif", description: "Directorate of Technical Education, Maharashtra State." }
-            ]
-        },
-        {
-            title: "Technology Partners",
-            partners: [
-                { id: 5, name: "Google Cloud", logo: "/logos/google-scholar-logo.png", description: "Providing computing resources for AI workshops." },
-                { id: 6, name: "NVIDIA", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Nvidia_logo.svg/2560px-Nvidia_logo.svg.png", description: "Hardware partner for deep learning simulations." }
+                {
+                    id: 3,
+                    name: "GECCS",
+                    logo: "/logos/geca-official-logo.png",
+                    description: "Government College of Engineering, Chhatrapati Sambhajinagar (Aurangabad). Host institution and primary academic patron."
+                },
+                {
+                    id: 4,
+                    name: "DTE Maharashtra",
+                    logo: "/logos/dte-logo.jpg",
+                    description: "Directorate of Technical Education, Maharashtra State."
+                },
+                {
+                    id: 11,
+                    name: "Dr. BAMU",
+                    logo: "/logos/bamu-logo.png",
+                    description: "Dr. Babasaheb Ambedkar Marathwada University. Affiliating University."
+                },
+                {
+                    id: 12,
+                    name: "AICTE",
+                    logo: "https://upload.wikimedia.org/wikipedia/en/e/eb/All_India_Council_for_Technical_Education_logo.png",
+                    description: "All India Council for Technical Education. Statutory Body."
+                }
             ]
         }
     ];

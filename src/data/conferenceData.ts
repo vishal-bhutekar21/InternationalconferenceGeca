@@ -1,9 +1,9 @@
 import type { Track, CommitteeMember, ImportantDate, ConferenceConfig, TimelineMilestone, GECAStat, NewsItem, NavItem } from '../types';
 
 export const latestNews: NewsItem[] = [
-    { id: 1, text: "Paper submission deadline extended to October 30, 2026!", isUrgent: true },
+    { id: 1, text: "Paper submission is open until October 30, 2026!", isUrgent: true, link: "/presentation-guidelines" },
     { id: 2, text: "Special session on AI Ethics announced. Check the Schedule for details.", link: "/schedule" },
-    { id: 3, text: "GECCS welcomes international delegates for ICAISD 2026." }
+    { id: 3, text: "GECCS welcomes international delegates for ICAISD 2026. Register now!", link: "/registration" }
 ];
 
 export const navigationItems: NavItem[] = [
@@ -12,11 +12,10 @@ export const navigationItems: NavItem[] = [
         name: 'About',
         dropdown: [
             { name: 'Conference Overview', path: '/about' },
-            { name: 'GECCS (Aurangabad) Chhatrapati Sambhajinagar', path: '/about#geca' },
-            { name: 'Venue & Travel', path: '/venue' },
-            { name: 'Advisory Board', path: '/advisory-board' }
+            { name: 'GECCS (Aurangabad) Chhatrapati Sambhajinagar', path: '/about#geca' }
         ]
     },
+    { name: 'Advisory Board', path: '/advisory-board' },
     { name: 'Event Timeline', path: '/timeline' },
     {
         name: 'Publications',
@@ -32,10 +31,10 @@ export const navigationItems: NavItem[] = [
 ];
 
 export const conferenceConfig: ConferenceConfig = {
-    title: "ICAISD 2026",
+    title: "ICAISDG 26",
     fullName: "2nd International Conference on Artificial Intelligence and Sustainable Development",
     date: "December 20-21, 2026",
-    venue: "Centre of Excellence, E&TC, Govt. College of Engineering, Chhatrapati Sambhajinagar",
+    venue: "Centre of Excellence, E&TC, Govt. College of Engineering, Chhatrapati Sambhajinagar", // Updated venue text
     theme: "Sustainable Future through AI Innovation",
     heroImage: "/images/geca-building.jpg",
     logo: "/logos/geca-official-logo.png",
@@ -53,144 +52,164 @@ export const timelineMilestones: TimelineMilestone[] = [
     {
         id: 1,
         date: "01 May 2026 — 15 Aug 2026",
+        label: "Paper Submission",
         title: "Paper Submission",
         description: "Submission of full length papers for technical review and feedback.",
-        status: "active",
-        label: "Schedule"
+        status: "active"
     },
     {
         id: 2,
         date: "16 Aug 2026 — 15 Sep 2026",
+        label: "Acceptance Notification",
         title: "Acceptance Notification",
         description: "Communication of review outcomes and acceptance decisions to authors.",
-        status: "upcoming",
-        label: "Schedule"
+        status: "upcoming"
     },
     {
         id: 3,
         date: "16 Sep 2026 — 30 Sep 2026",
+        label: "Camera Ready",
         title: "Camera Ready",
         description: "Final manuscript submission and copyright form completion.",
-        status: "upcoming",
-        label: "Schedule"
+        status: "upcoming"
     },
     {
         id: 4,
         date: "01 Oct 2026 — 15 Oct 2026",
+        label: "Registration",
         title: "Registration",
         description: "Deadline for conference registration and fee payment.",
-        status: "upcoming",
-        label: "Schedule"
+        status: "upcoming"
     },
     {
         id: 5,
         date: "20 Dec 2026 — 21 Dec 2026",
+        label: "Main Event",
         title: "Main Event",
         description: "Technical sessions, keynotes, and sustainable networking at GECCS.",
-        status: "upcoming",
-        label: "Schedule"
+        status: "upcoming"
     }
 ];
 
 export const importantDates: ImportantDate[] = [
-    { id: 1, label: "Paper Submission", date: "Aug 15, 2026", status: "Open" },
-    { id: 2, label: "Notification", date: "Sep 15, 2026", status: "Upcoming" },
-    { id: 3, label: "Camera Ready", date: "Sep 30, 2026", status: "Upcoming" },
-    { id: 4, label: "Registration", date: "Oct 15, 2026", status: "Upcoming" }
+    { id: 1, label: "Paper Submission Starts", date: "01 May, 2026", status: "upcoming" },
+    { id: 2, label: "Paper Submission Ends", date: "15 Aug, 2026", status: "upcoming" },
+    { id: 3, label: "Acceptance Notification", date: "16 Aug, 2026", status: "upcoming" },
+    { id: 4, label: "Camera Ready Submission", date: "30 Sep, 2026", status: "upcoming" },
+    { id: 5, label: "Registration Deadline", date: "15 Oct, 2026", status: "upcoming" },
+    { id: 6, label: "Conference Dates", date: "20-21 Dec, 2026", status: "upcoming" }
 ];
 
 export const tracks: Track[] = [
     {
         id: 1,
-        title: "AI in Sustainable Energy",
-        description: "Smart grids, renewable energy forecasting, and AI-driven efficiency in power systems.",
-        icon: "FaLeaf"
+        title: "Human Activity Detection and Recognition",
+        description: "Advanced systems for detecting and recognizing human activities in various environments.",
+        icon: "FaRunning"
     },
     {
         id: 2,
-        title: "Machine Learning & Big Data",
-        description: "Advanced algorithms, predictive modeling, and data-driven decision making.",
-        icon: "FaDatabase"
+        title: "Human Computer Interaction",
+        description: "Interfaces and interactions between humans and computers, focusing on usability and experience.",
+        icon: "FaMouse"
     },
     {
         id: 3,
-        title: "Robotics & Automation",
-        description: "Intelligent systems, autonomous vehicles, and industrial automation for sustainability.",
-        icon: "FaRobot"
-    },
-    {
-        id: 4,
-        title: "Smart Cities & Infrastructure",
-        description: "IoT integration, urban planning, and sustainable building technologies.",
-        icon: "FaCity"
-    },
-    {
-        id: 5,
-        title: "Natural Language Processing",
-        description: "Communication systems, multilingual AI, and cognitive computing.",
-        icon: "FaLanguage"
-    },
-    {
-        id: 6,
-        title: "Biomedical Engineering",
-        description: "AI in healthcare, medical imaging, and sustainable health solutions.",
+        title: "Medical Image Reconstruction",
+        description: "Techniques for reconstructing high-quality medical images from raw data.",
         icon: "FaHeartbeat"
     },
     {
+        id: 4,
+        title: "Generative AI for Computer Vision",
+        description: "Using generative models to create, enhance, and analyze visual data.",
+        icon: "FaEye"
+    },
+    {
+        id: 5,
+        title: "Explainable AI",
+        description: "Methods and techniques to make AI systems their actions understandable by humans.",
+        icon: "FaLightbulb"
+    },
+    {
+        id: 6,
+        title: "Natural Language Processing",
+        description: "Computational techniques for analyzing and representing naturally occurring texts.",
+        icon: "FaComments"
+    },
+    {
         id: 7,
-        title: "Circular Economy & Waste",
-        description: "AI for waste management, resource optimization, and green supply chains.",
-        icon: "FaRecycle"
+        title: "Motion & Tracking",
+        description: "Algorithms for tracking objects and analyzing motion patterns in video sequences.",
+        icon: "FaWalking"
     },
     {
         id: 8,
-        title: "Climate Change Modeling",
-        description: "Environmental monitoring, disaster prediction, and mitigation strategies.",
-        icon: "FaCloudSun"
+        title: "Video Surveillance",
+        description: "Intelligent monitoring systems for security and safety applications.",
+        icon: "FaVideo"
     },
     {
         id: 9,
-        title: "Ethical AI & Governance",
-        description: "Policy frameworks, transparency, and responsible AI deployment.",
-        icon: "FaBalanceScale"
+        title: "AI in Healthcare",
+        description: "Artificial intelligence applications in medical diagnosis, treatment, and management.",
+        icon: "FaStethoscope"
+    },
+    {
+        id: 10,
+        title: "Pattern Recognition",
+        description: "Automated recognition of patterns and regularities in data.",
+        icon: "FaFingerprint"
+    },
+    {
+        id: 11,
+        title: "Computer-Aided Diagnosis",
+        description: "Systems that assist doctors in the interpretation of medical images.",
+        icon: "FaUserMd"
+    },
+    {
+        id: 12,
+        title: "Machine Learning for Localization",
+        description: "Techniques for determining position and orientation using machine learning.",
+        icon: "FaMapMarkedAlt"
     }
 ];
 
 export const committeeMembers: CommitteeMember[] = [
-    // Conference Committee / Patrons
+    // Conference Leadership
     {
         id: 1,
-        name: "Dr. A. S. Bhalchandra",
+        name: "Dr. Sanjay Dambhare",
         designation: "Principal, GECCS",
         institution: "Government College of Engineering, Chhatrapati Sambhajinagar",
-        category: "Patrons",
-        image: "/images/committee/deans/principal_sir.jpeg"
+        category: "Conference Leadership",
+        image: "/images/principal.jpg"
     },
     {
         id: 2,
         name: "Dr. S. R. Hirekhan",
-        designation: "Head of Dept, E&TC",
+        designation: "Organizer Chair",
         institution: "GECCS",
-        category: "Patrons",
-        image: "/images/committee/hods/dr_sr_hirekhan_updated.jpg"
+        category: "Conference Leadership",
+        image: "/images/committee/Deans/hirekhansir.jpg"
+    },
+    {
+        id: 3,
+        name: "Dr. A. G. Agrawal",
+        designation: "Program Chair",
+        institution: "GECCS",
+        category: "Conference Leadership",
+        image: "/images/committee/Deans/agrawalmam.png"
     },
 
-    // Deans
-    {
-        id: 10,
-        name: "Dr. V. P. Kshirsagar",
-        designation: "Dean (Quality Assurance)",
-        institution: "GECCS",
-        category: "Deans",
-        image: "/images/committee/deans/vikul_sir.jpeg"
-    },
+
     {
         id: 11,
         name: "Prof. Santosh Atipamulu",
         designation: "Dean (Student Activities)",
         institution: "GECCS",
         category: "Deans",
-        image: "/images/committee/deans/santosh_atipamulu.jpg"
+        image: "/images/committee/Deans/atipamulu_sir.webp"
     },
 
     // Heads of Departments
@@ -200,7 +219,7 @@ export const committeeMembers: CommitteeMember[] = [
         designation: "Professor & Head",
         institution: "GECCS",
         category: "Heads of Departments",
-        image: "/images/committee/hods/dr_sr_hirekhan_updated.jpg"
+        image: "/images/committee/Deans/hirekhansir.jpg"
     },
     {
         id: 21,
@@ -208,41 +227,7 @@ export const committeeMembers: CommitteeMember[] = [
         designation: "Professor & Head",
         institution: "GECCS",
         category: "Heads of Departments",
-        image: "/images/committee/hods/dr_vikul_j_pawar_updated.jpg?v=1"
-    },
-
-    // Development Team
-    // {
-    //     id: 40,
-    //     name: "Gangaprasad Urekar",
-    //     designation: "Web Developer",
-    //     institution: "GECCS",
-    //     category: "Development Team",
-    //     image: "/images/committee/development-team/gangaprasad_urekar.jpg"
-    // },
-    // {
-    //     id: 41,
-    //     name: "Vishal Bhutekar",
-    //     designation: "Web Developer",
-    //     institution: "GECCS",
-    //     category: "Development Team",
-    //     image: "/images/committee/development-team/vishal_bhutekar.jpg"
-    // },
-    // {
-    //     id: 42,
-    //     name: "Keval Gawali",
-    //     designation: "Web Developer",
-    //     institution: "GECCS",
-    //     category: "Development Team",
-    //     image: "/images/committee/development-team/keval_gawali.jpg"
-    // },
-    // {
-    //     id: 43,
-    //     name: "Rushikesh Gaikwad",
-    //     designation: "Web Developer",
-    //     institution: "GECCS",
-    //     category: "Development Team",
-    //     image: "/images/committee/development-team/rushi_gaikawad.jpg"
-    // }
+        image: "/images/committee/Deans/vikul_sir.jpeg"
+    }
 ];
 

@@ -3,7 +3,6 @@ import CountdownTimer from '../components/CountdownTimer';
 import HomeDatesSection from '../components/HomeDatesSection';
 import About from '../components/About';
 import Tracks from '../components/Tracks';
-import Partners from '../components/Partners';
 import Legacy from '../components/Legacy';
 import VisitorCount from '../components/VisitorCount';
 import Guidelines from '../components/Guidelines';
@@ -71,7 +70,6 @@ const Home = () => {
             </section>
             <Guidelines />
             <Patrons />
-            <Partners />
         </main>
     );
 };

@@ -7,7 +7,7 @@ const Committee = () => {
     const [searchTerm, setSearchTerm] = useState('');
 
     const categories = [
-        { name: "Patrons", icon: <FaUsers /> },
+        { name: "Conference Leadership", icon: <FaUserTie /> },
         { name: "Deans", icon: <FaGraduationCap /> },
         { name: "Heads of Departments", icon: <FaCogs /> },
         { name: "Student Committee", icon: <FaUserGraduate /> },

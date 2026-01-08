@@ -44,11 +44,12 @@ const CountdownTimer = () => {
             <div className="container">
                 <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                     <div className="badge">CONFERENCE COUNTDOWN</div>
+                    <div style={{ fontSize: '1.25rem', fontWeight: 600, color: 'var(--color-text-muted)' }}>December 20-21, 2026</div>
                     <h2 style={{ fontSize: '3rem', fontWeight: 800, marginTop: '1rem', marginBottom: '1rem' }}>
-                        Time Until <span style={{ color: 'var(--color-accent-orange)' }}>ICAISD 2026</span>
+                        Time Until <span style={{ color: 'var(--color-accent-orange)' }}>ICAISDG 26</span>
                     </h2>
                     <p style={{ color: 'var(--color-text-muted)', fontSize: '1.1rem' }}>
-                        December 20-21, 2026 | GECCS (Aurangabad) Chhatrapati Sambhajinagar
+                        August 27-28, 2026 | GECCS (Aurangabad) Chhatrapati Sambhajinagar
                     </p>
                 </div>
 

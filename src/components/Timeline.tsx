@@ -205,7 +205,7 @@ const Timeline = () => {
                                         display: 'flex',
                                         flexDirection: 'column',
                                         gap: '2rem',
-                                        marginBottom: index === timelineMilestones.length - 1 ? '0' : '4rem',
+                                        marginBottom: index === timelineMilestones.length - 1 ? '0' : '12rem',
                                         alignItems: 'center',
                                         position: 'relative'
                                     }}
@@ -218,7 +218,7 @@ const Timeline = () => {
                                             boxShadow: `0 20px 60px rgba(251, 146, 60, 0.2)`
                                         }}
                                         style={{
-                                            padding: '2.5rem',
+                                            padding: '3.5rem 2.5rem',
                                             background: 'rgba(255, 255, 255, 0.05)',
                                             backdropFilter: 'blur(20px)',
                                             WebkitBackdropFilter: 'blur(20px)',
@@ -227,7 +227,7 @@ const Timeline = () => {
                                             position: 'relative',
                                             overflow: 'hidden',
                                             width: '100%',
-                                            maxWidth: '450px',
+                                            maxWidth: '500px',
                                             alignSelf: isLeft ? 'flex-start' : 'flex-end',
                                             marginLeft: isLeft ? '0' : 'auto',
                                             marginRight: isLeft ? 'auto' : '0'
@@ -254,13 +254,17 @@ const Timeline = () => {
 
                                         <div style={{ position: 'relative', zIndex: 1 }}>
                                             <div style={{
-                                                fontSize: '0.75rem',
-                                                fontWeight: 700,
-                                                color: 'var(--color-accent-orange)',
-                                                marginBottom: '0.75rem',
+                                                fontSize: '0.85rem',
+                                                fontWeight: 800,
+                                                color: milestone.status === 'active' ? 'var(--color-accent-orange)' : 'rgba(255,255,255,0.5)',
+                                                marginBottom: '0.5rem',
                                                 letterSpacing: '0.1em',
-                                                textTransform: 'uppercase'
+                                                textTransform: 'uppercase',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                gap: '0.5rem'
                                             }}>
+                                                {milestone.status === 'active' && <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--color-accent-orange)', boxShadow: '0 0 10px var(--color-accent-orange)' }} />}
                                                 {milestone.status}
                                             </div>
 

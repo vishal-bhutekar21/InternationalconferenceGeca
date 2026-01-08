@@ -46,7 +46,7 @@ const Hero = () => {
                         <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', backgroundColor: 'var(--color-orange-soft)', padding: '0.5rem 1rem', borderRadius: '50px', marginBottom: '2rem' }}>
                             <div className="pulse-dot" />
                             <span style={{ fontSize: '0.75rem', fontWeight: 800, color: 'var(--color-accent-orange)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                                ICAISD 2026 • Call for Papers
+                                ICAISDG 26 • Call for Papers
                             </span>
                         </div>
 
@@ -76,7 +76,7 @@ const Hero = () => {
                             maxWidth: '680px',
                             fontWeight: 500
                         }}>
-                            The <span style={{ color: 'var(--color-primary)', fontWeight: 700 }}>International Conference on Artificial Intelligence and Sustainable Development (ICAISD 2026)</span> is a premier platform for global researchers, hosted by <span style={{ color: 'var(--color-primary)', fontWeight: 700 }}>Centre of Excellence, E&TC, Government College of Engineering, Chhatrapati Sambhajinagar</span>. Join us for a transformative exchange of ideas in technical innovation and environmental stewardship.
+                            The <span style={{ color: 'var(--color-primary)', fontWeight: 700 }}>International Conference on Artificial Intelligence and Sustainable Development (ICAISDG 26)</span> is a premier platform for global researchers, hosted by <span style={{ color: 'var(--color-primary)', fontWeight: 700 }}>Centre of Excellence, E&TC, Government College of Engineering, Chhatrapati Sambhajinagar</span>. Join us for a transformative exchange of ideas in technical innovation and environmental stewardship.
                         </p>
 
                         <div style={{ display: 'flex', gap: '1.25rem', marginBottom: '3.5rem', flexWrap: 'wrap' }}>
@@ -93,7 +93,7 @@ const Hero = () => {
                         <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', marginBottom: '2.5rem' }}>
                             <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', backgroundColor: '#F1F5F9', padding: '0.4rem 0.8rem', borderRadius: '8px' }}>
                                 <FaCalendarAlt color="var(--color-accent-orange)" size={14} />
-                                <span style={{ fontWeight: 700, fontSize: '0.85rem', color: '#334155' }}>Dec 20-21, 2026</span>
+                                <span style={{ fontWeight: 700, fontSize: '0.85rem', color: '#334155' }}>Aug 27-28, 2026</span>
                             </div>
                             <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', backgroundColor: '#F1F5F9', padding: '0.4rem 0.8rem', borderRadius: '8px' }}>
                                 <FaMapMarkerAlt color="var(--color-accent-orange)" size={14} />
@@ -101,31 +101,6 @@ const Hero = () => {
                             </div>
                         </div>
 
-                        <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-                            {[
-                                { icon: <FaGlobe />, text: "SPRINGER INDEXED" },
-                                { icon: <FaSearch />, text: "SCOPUS INDEXED" },
-                                { icon: <FaCertificate />, text: "PEER REVIEWED" }
-                            ].map((badge, i) => (
-                                <div key={i} style={{
-                                    background: 'rgba(255, 255, 255, 0.7)',
-                                    backdropFilter: 'blur(8px)',
-                                    border: '1px solid rgba(251, 146, 60, 0.2)',
-                                    padding: '0.6rem 1.25rem',
-                                    borderRadius: '12px',
-                                    fontSize: '0.75rem',
-                                    fontWeight: 800,
-                                    color: 'var(--color-primary)',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    gap: '0.75rem',
-                                    boxShadow: '0 4px 12px rgba(0,0,0,0.03)'
-                                }}>
-                                    <span style={{ color: 'var(--color-accent-orange)' }}>{badge.icon}</span>
-                                    {badge.text}
-                                </div>
-                            ))}
-                        </div>
                     </motion.div>
 
                     {/* Right Image Wrapper */}

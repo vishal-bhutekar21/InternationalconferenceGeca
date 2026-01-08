@@ -58,7 +58,7 @@ const Legacy = () => {
                 }}>
                     <div style={{ textAlign: 'center' }}>
                         <img
-                            src="https://www.mic.gov.in/assets/img/logos/iic_logo.png"
+                            src="/images/iic-new.png"
                             alt="Institution's Innovation Council"
                             style={{ height: '80px', marginBottom: '1rem' }}
                             onError={(e) => { e.currentTarget.src = 'https://placehold.co/150x80?text=IIC+Logo' }}
@@ -68,7 +68,7 @@ const Legacy = () => {
                     <div style={{ width: '2px', height: '100px', backgroundColor: '#E2E8F0' }} />
                     <div style={{ textAlign: 'center' }}>
                         <img
-                            src="https://www.mic.gov.in/assets/img/logos/nisp_logo.png"
+                            src="/images/nisp-new.jpg"
                             alt="NISP"
                             style={{ height: '80px', marginBottom: '1rem' }}
                             onError={(e) => { e.currentTarget.src = 'https://placehold.co/150x80?text=NISP+Logo' }}

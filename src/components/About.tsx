@@ -33,7 +33,7 @@ const About = () => {
                             <span style={{ color: 'var(--color-accent-orange)' }}>Sustainable Future</span>
                         </h2>
                         <p style={{ fontSize: '1.1rem', lineHeight: 1.8, color: 'var(--color-text-muted)', marginBottom: '1.5rem' }}>
-                            The International Conference on Artificial Intelligence and Sustainable Development (ICAISD) brings together leading academicians, scientists, researchers, and scholars to exchange and share their experiences and research results on all aspects of Artificial Intelligence.
+                            The International Conference on Artificial Intelligence and Sustainable Development (ICAISDG 26) brings together leading academicians, scientists, researchers, and scholars to exchange and share their experiences and research results on all aspects of Artificial Intelligence.
                         </p>
                         <p style={{ fontSize: '1.1rem', lineHeight: 1.8, color: 'var(--color-text-muted)', marginBottom: '3rem' }}>
                             Hosted by the prestigious <span style={{ fontWeight: 700, color: 'var(--color-text-main)' }}>Government College of Engineering, (Aurangabad) Chhatrapati Sambhajinagar (GECCS)</span>, this year's theme focuses on how AI technologies can be leveraged to solve critical environmental and societal challenges.

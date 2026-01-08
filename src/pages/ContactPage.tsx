@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa';
+import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaPaperPlane, FaCheckCircle } from 'react-icons/fa';
+
 
 const ContactPage = () => {
     return (
@@ -10,7 +11,7 @@ const ContactPage = () => {
                         <div className="badge">SUPPORT & INQUIRIES</div>
                         <h1 style={{ fontSize: '4rem', fontWeight: 800, margin: '1rem 0' }}>Get in <span style={{ color: 'var(--color-accent-orange)' }}>Touch</span></h1>
                         <p style={{ maxWidth: '600px', margin: '0 auto', color: 'var(--color-text-muted)' }}>
-                            We are here to assist you with any questions regarding paper submission, registration, or sponsorship for the ICAISD 2026 conference.
+                            We are here to assist you with any questions regarding paper submission, registration, or sponsorship for the ICAISDG 26 conference.
                         </p>
                     </div>
 
@@ -105,18 +106,174 @@ const ContactPage = () => {
                         </div>
                     </div>
 
-                    <div style={{ marginTop: '5rem', borderRadius: '24px', overflow: 'hidden', height: '400px', border: '1px solid var(--color-border)', boxShadow: 'var(--shadow-lg)' }}>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.4087834578133!2d75.32104087522497!3d19.864998981507743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb9866228186ef%3A0x676ee560f64c676!2sGovernment%20College%20of%20Engineering%2C%20Aurangabad!5e0!3m2!1sen!2sin!4v1704705500123!5m2!1sen!2sin"
-                            width="100%"
-                            height="100%"
-                            style={{ border: 0 }}
-                            allowFullScreen
-                            loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"
-                            title="Government College of Engineering, Chhatrapati Sambhajinagar"
-                        ></iframe>
+                    {/* Venue & Map Section - Consolidated */}
+                    <div style={{ marginTop: '5rem' }}>
+                        <div className="badge" style={{ marginBottom: '1rem', textAlign: 'center' }}>LOCATION</div>
+                        <h2 style={{ fontSize: '2.5rem', fontWeight: 800, textAlign: 'center', marginBottom: '3rem' }}>Conference <span style={{ color: 'var(--color-accent-orange)' }}>Venue</span></h2>
+
+                        <div style={{
+                            display: 'grid',
+                            gridTemplateColumns: '1fr 1.5fr',
+                            gap: '2rem',
+                            backgroundColor: 'white',
+                            borderRadius: '24px',
+                            overflow: 'hidden',
+                            boxShadow: 'var(--shadow-lg)'
+                        }} className="venue-grid">
+                            <div style={{ padding: '3rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                                <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', marginBottom: '2rem' }}>
+                                    <FaMapMarkerAlt size={24} color="var(--color-accent-orange)" style={{ marginTop: '0.25rem' }} />
+                                    <div>
+                                        <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '0.5rem' }}>Government College of Engineering</h3>
+                                        <p style={{ color: 'var(--color-text-muted)', lineHeight: 1.6 }}>
+                                            Station Road, Osmanpura,<br />
+                                            Chhatrapati Sambhajinagar (Aurangabad) - 431005,<br />
+                                            Maharashtra, India
+                                        </p>
+                                    </div>
+                                </div>
+                                <a
+                                    href="https://maps.google.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="btn btn-orange"
+                                    style={{ alignSelf: 'flex-start', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
+                                >
+                                    Get Directions <FaPaperPlane style={{ fontSize: '0.8rem' }} />
+                                </a>
+                            </div>
+                            <div style={{ minHeight: '400px', background: '#f1f5f9' }}>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.4087834578133!2d75.32104087522497!3d19.864998981507743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb9866228186ef%3A0x676ee560f64c676!2sGovernment%20College%20of%20Engineering%2C%20Aurangabad!5e0!3m2!1sen!2sin!4v1704705500123!5m2!1sen!2sin"
+                                    width="100%"
+                                    height="100%"
+                                    style={{ border: 0 }}
+                                    allowFullScreen
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    title="GECCS Map"
+                                ></iframe>
+                            </div>
+                        </div>
                     </div>
+
+                    {/* Accommodation / Hostels Section */}
+                    <div style={{ marginTop: '5rem' }}>
+                        <div className="badge" style={{ marginBottom: '1rem', textAlign: 'center' }}>STAY</div>
+                        <h2 style={{ fontSize: '2.5rem', fontWeight: 800, textAlign: 'center', marginBottom: '3rem' }}>Accommodation & <span style={{ color: 'var(--color-accent-orange)' }}>Hostels</span></h2>
+
+                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2.5rem' }}>
+                            {/* GECCS Hostels */}
+                            <motion.div
+                                whileHover={{ y: -10 }}
+                                className="card-glass"
+                                style={{ padding: '0', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}
+                            >
+                                <div style={{ height: '200px', backgroundColor: '#e2e8f0', position: 'relative' }}>
+                                    <img
+                                        src="/images/geca-building.jpg" // Placeholder if specific hostel image unknown
+                                        alt="GECCS Hostel"
+                                        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                        onError={(e) => { e.currentTarget.src = 'https://placehold.co/600x400?text=College+Hostel' }}
+                                    />
+                                    <div style={{ position: 'absolute', top: '10px', left: '10px', background: 'var(--color-primary)', color: 'white', padding: '0.25rem 0.75rem', borderRadius: '50px', fontSize: '0.8rem', fontWeight: 700 }}>On Campus</div>
+                                </div>
+                                <div style={{ padding: '2rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
+                                    <h3 style={{ fontSize: '1.4rem', marginBottom: '0.5rem' }}>GECCS Hostels</h3>
+                                    <p style={{ color: 'var(--color-text-muted)', marginBottom: '1.5rem', fontSize: '0.95rem', lineHeight: 1.6, flex: 1 }}>
+                                        Secure and affordable accommodation within the college campus. Separate wings for male and female students/research scholars.
+                                    </p>
+                                    <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 1.5rem 0', color: 'var(--color-text-muted)', fontSize: '0.9rem' }}>
+                                        <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                                            <FaCheckCircle color="var(--color-accent-orange)" size={14} /> Basic Amenities
+                                        </li>
+                                        <li style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                                            <FaCheckCircle color="var(--color-accent-orange)" size={14} /> Walking Distance to Venue
+                                        </li>
+                                    </ul>
+                                    <button className="btn btn-outline" style={{ width: '100%' }} disabled>
+                                        Contact Admin for Booking
+                                    </button>
+                                </div>
+                            </motion.div>
+
+                            {/* Lemon Tree Hotel */}
+                            <motion.div
+                                whileHover={{ y: -10 }}
+                                className="card-glass"
+                                style={{ padding: '0', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}
+                            >
+                                <div style={{ height: '200px', backgroundColor: '#e2e8f0' }}>
+                                    <img
+                                        src="https://www.lemontreehotels.com/uploads/hotel_images/67_hotel_slider_mobile_1.jpg"
+                                        alt="Lemon Tree Hotel"
+                                        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                        onError={(e) => { e.currentTarget.src = 'https://placehold.co/600x400?text=Lemon+Tree+Hotel' }}
+                                    />
+                                </div>
+                                <div style={{ padding: '2rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
+                                    <h3 style={{ fontSize: '1.4rem', marginBottom: '0.5rem' }}>Lemon Tree Hotel</h3>
+                                    <p style={{ color: 'var(--color-text-muted)', marginBottom: '1.5rem', fontSize: '0.95rem', lineHeight: 1.6, flex: 1 }}>
+                                        Refreshing business hotel located near the airport and industrial hubs. Offers modern amenities and efficient service.
+                                    </p>
+                                    <div style={{ marginBottom: '1.5rem', fontSize: '0.9rem', color: 'var(--color-text-muted)' }}>
+                                        <strong>Distance:</strong> ~4.5 km from venue
+                                    </div>
+                                    <a
+                                        href="https://www.lemontreehotels.com/lemon-tree-hotel/aurangabad/hotel-aurangabad"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="btn btn-orange"
+                                        style={{ width: '100%', textAlign: 'center', display: 'block', textDecoration: 'none' }}
+                                    >
+                                        Book Now
+                                    </a>
+                                </div>
+                            </motion.div>
+
+                            {/* Ginger Hotel */}
+                            <motion.div
+                                whileHover={{ y: -10 }}
+                                className="card-glass"
+                                style={{ padding: '0', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}
+                            >
+                                <div style={{ height: '200px', backgroundColor: '#e2e8f0' }}>
+                                    <img
+                                        src="https://www.gingerhotels.com/resourcefiles/hotelprofile/aurangabad-th.jpg"
+                                        alt="Ginger Hotel"
+                                        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                        onError={(e) => { e.currentTarget.src = 'https://placehold.co/600x400?text=Ginger+Hotel' }}
+                                    />
+                                </div>
+                                <div style={{ padding: '2rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
+                                    <h3 style={{ fontSize: '1.4rem', marginBottom: '0.5rem' }}>Ginger Hotel</h3>
+                                    <p style={{ color: 'var(--color-text-muted)', marginBottom: '1.5rem', fontSize: '0.95rem', lineHeight: 1.6, flex: 1 }}>
+                                        Leane luxe hotel offering a vibrant and contemporary stay experience. Great for budget-conscious business travelers.
+                                    </p>
+                                    <div style={{ marginBottom: '1.5rem', fontSize: '0.9rem', color: 'var(--color-text-muted)' }}>
+                                        <strong>Distance:</strong> ~2.0 km from venue
+                                    </div>
+                                    <a
+                                        href="https://www.gingerhotels.com/ginger-aurangabad"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="btn btn-orange"
+                                        style={{ width: '100%', textAlign: 'center', display: 'block', textDecoration: 'none' }}
+                                    >
+                                        Book Now
+                                    </a>
+                                </div>
+                            </motion.div>
+                        </div>
+                    </div>
+
+                    <style>{`
+                        @media (max-width: 768px) {
+                            .venue-grid {
+                                grid-template-columns: 1fr !important;
+                            }
+                        }
+                    `}</style>
                 </div>
             </section>
         </main>
