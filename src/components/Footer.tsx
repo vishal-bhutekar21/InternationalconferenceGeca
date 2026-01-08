@@ -101,8 +101,8 @@ const Footer = () => {
                             Maharashtra 431005
                         </p>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem' }}>
-                            <a href="mailto:contact@icaisd2026.org" style={{ color: 'white', textDecoration: 'none', opacity: 0.7 }} className="footer-link">
-                                <FaEnvelope style={{ marginRight: '0.5rem' }} /> contact@icaisd2026.org
+                            <a href="mailto:contact@icaisdg2026.org" style={{ color: 'white', textDecoration: 'none', opacity: 0.7 }} className="footer-link">
+                                <FaEnvelope style={{ marginRight: '0.5rem' }} /> contact@icaisdg2026.org
                             </a>
                             <span style={{ opacity: 0.7 }}>
                                 <FaPhone style={{ marginRight: '0.5rem' }} /> +91 240 2403101

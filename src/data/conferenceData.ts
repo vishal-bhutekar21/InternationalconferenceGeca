@@ -38,7 +38,7 @@ export const conferenceConfig: ConferenceConfig = {
     theme: "Sustainable Future through AI Innovation",
     heroImage: "/images/geca-building.jpg",
     logo: "/logos/geca-official-logo.png",
-    description: "ICAISD 2026 aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Artificial Intelligence and Sustainable Development."
+    description: "ICAISDG 26 aims to bring together leading academic scientists, researchers and research scholars to exchange and share their experiences and research results on all aspects of Artificial Intelligence and Sustainable Development."
 };
 
 export const gecaStats: GECAStat[] = [
