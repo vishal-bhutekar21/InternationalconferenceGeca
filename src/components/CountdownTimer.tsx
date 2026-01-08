@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 const CountdownTimer = () => {
-    const targetDate = new Date('2026-12-20T09:00:00').getTime();
+    const targetDate = new Date('2026-08-27T09:00:00').getTime();
 
     const [timeLeft, setTimeLeft] = useState({
         days: 0,
@@ -44,7 +44,7 @@ const CountdownTimer = () => {
             <div className="container">
                 <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                     <div className="badge">CONFERENCE COUNTDOWN</div>
-                    <div style={{ fontSize: '1.25rem', fontWeight: 600, color: 'var(--color-text-muted)' }}>December 20-21, 2026</div>
+                    <div style={{ fontSize: '1.25rem', fontWeight: 600, color: 'var(--color-text-muted)' }}>August 27-28, 2026</div>
                     <h2 style={{ fontSize: '3rem', fontWeight: 800, marginTop: '1rem', marginBottom: '1rem' }}>
                         Time Until <span style={{ color: 'var(--color-accent-orange)' }}>ICAISDG 26</span>
                     </h2>

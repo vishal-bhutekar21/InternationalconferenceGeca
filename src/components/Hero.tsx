@@ -151,10 +151,14 @@ const Hero = () => {
                                     letterSpacing: '0.1em'
                                 }}>Conference Theme</div>
                                 <div style={{ fontSize: '1.5rem', fontWeight: 900, color: 'var(--color-primary)', lineHeight: 1.2, letterSpacing: '-0.02em' }}>
-                                    Building Sustainable Futures <br />Through <span style={{ color: 'var(--color-accent-orange)' }}>AI Innovation</span> for sustainable development growth
+                                    Building Sustainable Futures <br />Through <span style={{ color: 'var(--color-accent-orange)' }}>AI Innovation</span><br />
+                                    <span style={{ fontSize: '0.9rem', fontWeight: 600, display: 'block', marginTop: '1rem', color: 'var(--color-text-muted)' }}>
+                                        ORGANIZED BY<br />
+                                        Government College Of Engineering, Aurangabad, Chh. Sambhajinagar<br />
+                                        Center Of Excellence, Electronics & Telecommunication Department
+                                    </span>
                                 </div>
                             </div>
-                        </div>
                     </motion.div>
                 </div>
             </div >
