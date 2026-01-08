@@ -126,37 +126,67 @@ const Hero = () => {
                             />
 
                             {/* Overlay Card - Refined Layout */}
+                            {/* Overlay Card - Refined Layout */}
                             <div style={{
                                 position: 'absolute',
-                                bottom: '2rem',
-                                left: '2rem',
-                                right: '2rem',
-                                backgroundColor: 'rgba(255, 255, 255, 0.95)',
-                                backdropFilter: 'blur(20px)',
-                                borderRadius: '28px',
-                                padding: '2.5rem',
-                                boxShadow: '0 25px 50px rgba(0,0,0,0.15)',
-                                border: '1px solid rgba(255,255,255,0.5)'
+                                bottom: '1.5rem',
+                                left: '1.5rem',
+                                right: '1.5rem',
+                                backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                                backdropFilter: 'blur(12px)',
+                                borderRadius: '20px',
+                                padding: '1.75rem',
+                                boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
+                                border: '1px solid rgba(255,255,255,0.8)'
                             }} className="hero-overlay-card">
+                                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.75rem' }}>
+                                    <div style={{
+                                        fontSize: '0.65rem',
+                                        fontWeight: 800,
+                                        color: 'var(--color-accent-orange)',
+                                        textTransform: 'uppercase',
+                                        letterSpacing: '0.1em',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        gap: '0.5rem'
+                                    }}>
+                                        <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--color-accent-orange)' }}></span>
+                                        Conference Theme
+                                    </div>
+                                </div>
+
                                 <div style={{
-                                    display: 'inline-block',
-                                    fontSize: '0.7rem',
-                                    fontWeight: 900,
-                                    color: 'white',
-                                    backgroundColor: 'var(--color-accent-orange)',
-                                    padding: '0.4rem 1rem',
-                                    borderRadius: '50px',
-                                    marginBottom: '1rem',
-                                    textTransform: 'uppercase',
-                                    letterSpacing: '0.1em'
-                                }}>Conference Theme</div>
-                                <div style={{ fontSize: '1.5rem', fontWeight: 900, color: 'var(--color-primary)', lineHeight: 1.2, letterSpacing: '-0.02em' }}>
-                                    Building Sustainable Futures <br />Through <span style={{ color: 'var(--color-accent-orange)' }}>AI Innovation</span><br />
-                                    <span style={{ fontSize: '0.9rem', fontWeight: 600, display: 'block', marginTop: '1rem', color: 'var(--color-text-muted)' }}>
-                                        ORGANIZED BY<br />
-                                        Government College Of Engineering, Aurangabad, Chh. Sambhajinagar<br />
-                                        Center Of Excellence, Electronics & Telecommunication Department
-                                    </span>
+                                    fontSize: '1.35rem',
+                                    fontWeight: 800,
+                                    color: 'var(--color-primary)',
+                                    lineHeight: 1.3,
+                                    letterSpacing: '-0.02em',
+                                    marginBottom: '1.25rem'
+                                }}>
+                                    Building Sustainable Futures Through <span style={{ color: 'var(--color-accent-orange)' }}>AI Innovation</span>
+                                </div>
+
+                                <div style={{
+                                    borderTop: '1px solid rgba(0,0,0,0.08)',
+                                    paddingTop: '1rem',
+                                    marginTop: 'auto'
+                                }}>
+                                    <div style={{
+                                        fontSize: '0.6rem',
+                                        fontWeight: 700,
+                                        color: '#94A3B8',
+                                        textTransform: 'uppercase',
+                                        marginBottom: '0.5rem',
+                                        letterSpacing: '0.05em'
+                                    }}>
+                                        Organized By
+                                    </div>
+                                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#334155', lineHeight: 1.4 }}>
+                                        Government College Of Engineering
+                                    </div>
+                                    <div style={{ fontSize: '0.75rem', color: '#64748B', marginTop: '0.2rem' }}>
+                                        Chh. Sambhajinagar • Center of Excellence (E&TC)
+                                    </div>
                                 </div>
                             </div>
                         </div>
