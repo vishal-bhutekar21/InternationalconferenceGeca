@@ -49,8 +49,8 @@ const ContactPage = () => {
                                     <div>
                                         <h3 style={{ fontSize: '1.1rem', marginBottom: '0.25rem' }}>Email Support</h3>
                                         <p style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)' }}>
-                                            General: info.caisdg@geca.ac.in<br />
-                                            Technical: tech.caisdg@geca.ac.in
+                                            General: info.icaisg26@geca.ac.in<br />
+                                            Technical: info.icaisg26@geca.ac.in
                                         </p>
                                     </div>
                                 </div>
@@ -64,7 +64,7 @@ const ContactPage = () => {
                                     <div>
                                         <h3 style={{ fontSize: '1.1rem', marginBottom: '0.25rem' }}>Phone Lines</h3>
                                         <p style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)' }}>
-                                            +91 240 2366101 (Office)<br />
+                                            +91 99708 84849<br />
                                             Mon-Fri, 09:00 - 17:00 IST
                                         </p>
                                     </div>

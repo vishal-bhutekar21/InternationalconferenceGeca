@@ -78,7 +78,7 @@ const LocateUs = () => {
                                 </div>
                                 <div>
                                     <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem' }}>Contact</h3>
-                                    <p style={{ color: 'var(--color-text-muted)' }}>+91 240 2403101</p>
+                                    <p style={{ color: 'var(--color-text-muted)' }}>+91 99708 84849</p>
                                 </div>
                             </div>
 
@@ -92,7 +92,7 @@ const LocateUs = () => {
                                 </div>
                                 <div>
                                     <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem' }}>Email</h3>
-                                    <p style={{ color: 'var(--color-text-muted)' }}>contact@icaisd2026.org</p>
+                                    <p style={{ color: 'var(--color-text-muted)' }}>info.icaisg26@geca.ac.in</p>
                                 </div>
                             </div>
                         </div>

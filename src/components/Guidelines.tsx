@@ -63,7 +63,7 @@ const Guidelines = () => {
                                 Go to Submission Portal <FaExternalLinkAlt size={12} />
                             </a>
                             <div style={{ marginTop: '2rem', paddingTop: '2rem', borderTop: '1px solid rgba(255,255,255,0.1)', fontSize: '0.85rem', opacity: 0.6 }}>
-                                Need help? Contact us at <span style={{ color: 'var(--color-accent-orange)', fontWeight: 700 }}>support@icaisd.org</span>
+                                Need help? Contact us at <span style={{ color: 'var(--color-accent-orange)', fontWeight: 700 }}>info.icaisg26@geca.ac.in</span>
                             </div>
                         </motion.div>
                     </div>

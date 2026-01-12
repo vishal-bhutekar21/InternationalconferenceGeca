@@ -101,11 +101,11 @@ const Footer = () => {
                             Maharashtra 431005
                         </p>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem' }}>
-                            <a href="mailto:info.caisdg@geca.ac.in" style={{ color: 'white', textDecoration: 'none', opacity: 0.7 }} className="footer-link">
-                                <FaEnvelope style={{ marginRight: '0.5rem' }} /> info.caisdg@geca.ac.in
+                            <a href="mailto:info.icaisg26@geca.ac.in" style={{ color: 'white', textDecoration: 'none', opacity: 0.7 }} className="footer-link">
+                                <FaEnvelope style={{ marginRight: '0.5rem' }} /> info.icaisg26@geca.ac.in
                             </a>
                             <span style={{ opacity: 0.7 }}>
-                                <FaPhone style={{ marginRight: '0.5rem' }} /> +91 240 2403101
+                                <FaPhone style={{ marginRight: '0.5rem' }} /> +91 99708 84849
                             </span>
                         </div>
                     </div>
