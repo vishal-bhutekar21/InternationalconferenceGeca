@@ -3,8 +3,8 @@ import { FaCalendarAlt, FaClock, FaMapMarkerAlt, FaMicrophone } from 'react-icon
 
 const SchedulePage = () => {
     const days = [
-        { id: 1, label: "Day 01", date: "Friday, Dec 19, 2026", active: true },
-        { id: 2, label: "Day 02", date: "Saturday, Dec 20, 2026", active: false }
+        { id: 1, label: "Day 01", date: "August 2026", active: true },
+        { id: 2, label: "Day 02", date: "August 2026", active: false }
     ];
 
     const timeline = [
@@ -35,7 +35,7 @@ const SchedulePage = () => {
                             <FaCalendarAlt color="var(--color-accent-orange)" />
                             <div style={{ textAlign: 'left' }}>
                                 <div style={{ fontSize: '0.7rem', fontWeight: 700, color: 'var(--color-text-muted)' }}>DATES</div>
-                                <div style={{ fontWeight: 700 }}>19-20 December 2026</div>
+                                <div style={{ fontWeight: 700 }}>August 2026</div>
                             </div>
                         </div>
                         <div style={{ padding: '1rem 2rem', backgroundColor: 'white', borderRadius: '12px', boxShadow: 'var(--shadow-sm)', display: 'flex', alignItems: 'center', gap: '1rem' }}>

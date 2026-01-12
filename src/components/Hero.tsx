@@ -64,7 +64,7 @@ const Hero = () => {
                                 WebkitBackgroundClip: 'text',
                                 WebkitTextFillColor: 'transparent',
                                 backgroundClip: 'text'
-                            }}>Societal Growth</span>
+                            }}>Sustainable Growth</span>
                         </h1>
 
                         <p style={{
@@ -75,7 +75,7 @@ const Hero = () => {
                             maxWidth: '680px',
                             fontWeight: 500
                         }}>
-                            The <span style={{ color: 'var(--color-primary)', fontWeight: 700 }}>International Conference on Artificial Intelligence for Societal Growth (ICAISG2026)</span> brings together thought leaders, researchers, policymakers, technologists, and social innovators from around the world. Hosted by <span style={{ color: 'var(--color-primary)', fontWeight: 700 }}>Department of Electronics and Telecommunication Engg, Centre Of Excellence (Thinking Systems for Signal and Image Processing), Government College of Engineering, Aurangabad, Chh. Sambhajinagar</span>. Join us for a transformative exchange of ideas that harness AI for societal advancement.
+                            The <span style={{ color: 'var(--color-primary)', fontWeight: 700 }}>International Conference on Artificial Intelligence for Sustainable Growth (ICAISG2026)</span> brings together thought leaders, researchers, policymakers, technologists, and social innovators from around the world. Hosted by <span style={{ color: 'var(--color-primary)', fontWeight: 700 }}>Department of Electronics and Telecommunication Engg, Centre Of Excellence (Thinking Systems for Signal and Image Processing), Government College of Engineering, Aurangabad, Chh. Sambhajinagar</span>. Join us for a transformative exchange of ideas that harness AI for sustainable growth.
                         </p>
 
                         <div style={{ display: 'flex', gap: '1.25rem', marginBottom: '3.5rem', flexWrap: 'wrap' }}>
@@ -159,7 +159,7 @@ const Hero = () => {
                                     letterSpacing: '-0.02em',
                                     marginBottom: '1.25rem'
                                 }}>
-                                    Harnessing AI for <span style={{ color: 'var(--color-accent-orange)' }}>Societal Growth</span>
+                                    Harnessing AI for <span style={{ color: 'var(--color-accent-orange)' }}>Sustainable Growth</span>
                                 </div>
 
                                 <div style={{

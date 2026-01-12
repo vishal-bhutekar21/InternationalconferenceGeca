@@ -34,7 +34,7 @@ const ConferenceTasks = () => {
                         Conference <span style={{ color: 'var(--color-accent-orange)' }}>Tasks</span>
                     </h2>
                     <p style={{ color: 'var(--color-text-muted)', fontSize: '1.1rem', maxWidth: '700px', margin: '0 auto' }}>
-                        Follow these steps to participate in ICAISG 2026 and contribute to the advancement of AI for societal growth.
+                        Follow these steps to participate in ICAISG 2026 and contribute to the advancement of AI for sustainable growth.
                     </p>
                 </div>
 

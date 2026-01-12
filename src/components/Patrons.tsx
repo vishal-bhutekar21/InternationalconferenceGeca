@@ -21,9 +21,9 @@ const Patrons = () => {
             image: "/images/principal.jpg"
         },
         {
-            name: "Dr. K.B. Ladhane",
+            name: "Shri Prashant Deshpande",
             role: "Patron",
-            org: "JD, RO, TE, Chh. Sambhajinagar",
+            org: "CEO, MediAstra Tech Pvt Ltd",
             image: "/images/principal.jpg"
         }
     ];

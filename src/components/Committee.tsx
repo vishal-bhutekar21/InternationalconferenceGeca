@@ -77,8 +77,14 @@ const Committee = () => {
                     const members = getMembersByCategory(category.name);
                     if (members.length === 0) return null;
 
+                    const sectionId = category.name.toLowerCase()
+                        .replace(/\s+/g, '-')
+                        .replace('international-advisory-committee', 'international')
+                        .replace('national-advisory-committee', 'national')
+                        .replace('organizing-committee', 'organizing');
+
                     return (
-                        <div key={category.name} style={{ marginBottom: '6rem' }}>
+                        <div key={category.name} id={sectionId} style={{ marginBottom: '6rem', scrollMarginTop: '100px' }}>
                             <div style={{
                                 display: 'flex',
                                 alignItems: 'center',

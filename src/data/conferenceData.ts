@@ -1,7 +1,7 @@
 import type { Track, CommitteeMember, ImportantDate, ConferenceConfig, TimelineMilestone, GECAStat, NewsItem, NavItem } from '../types';
 
 export const latestNews: NewsItem[] = [
-    { id: 1, text: "Paper submission is open until October 30, 2026!", isUrgent: true, link: "/presentation-guidelines" },
+    { id: 1, text: "Full paper submission deadline: April 2026!", isUrgent: true, link: "/presentation-guidelines" },
     { id: 2, text: "Special session on AI Ethics announced. Check the Schedule for details.", link: "/schedule" },
     { id: 3, text: "GECCS welcomes international delegates for ICAISG 2026. Register now!", link: "/registration" }
 ];
@@ -15,7 +15,16 @@ export const navigationItems: NavItem[] = [
             { name: 'GECCS (Aurangabad) Chhatrapati Sambhajinagar', path: '/about#geca' }
         ]
     },
-    { name: 'Event Timeline', path: '/timeline' },
+    {
+        name: 'Advisory Committee',
+        dropdown: [
+            { name: 'All Committees', path: '/committee' },
+            { name: 'Patrons', path: '/committee#patrons' },
+            { name: 'International Advisory', path: '/committee#international' },
+            { name: 'National Advisory', path: '/committee#national' },
+            { name: 'Organizing Committee', path: '/committee#organizing' }
+        ]
+    },
     {
         name: 'Publications',
         dropdown: [
@@ -24,20 +33,20 @@ export const navigationItems: NavItem[] = [
         ]
     },
     { name: 'Guidelines', path: '/presentation-guidelines' },
-    { name: 'Advisory Committee', path: '/committee' },
+    { name: 'Event Timeline', path: '/timeline' },
     { name: 'Tracks', path: '/tracks' },
     { name: 'Contact', path: '/contact' }
 ];
 
 export const conferenceConfig: ConferenceConfig = {
     title: "ICAISG2026",
-    fullName: "International Conference on Artificial Intelligence for Societal Growth",
+    fullName: "International Conference on Artificial Intelligence for Sustainable Growth",
     date: "August 2026",
     venue: "Government College Of Engineering, Aurangabad, Chh. Sambhajinagar",
-    theme: "Artificial Intelligence for Societal Growth",
+    theme: "Artificial Intelligence for Sustainable Growth",
     heroImage: "/images/geca-building.jpg",
     logo: "/logos/geca-official-logo.png",
-    description: "The International Conference on Artificial Intelligence for Societal Growth brings together thought leaders, researchers, policymakers, technologists, and social innovators from around the world to explore how AI can be leveraged to address the most pressing challenges of the time. Organized by Government College Of Engineering, Aurangabad, Chh. Sambhajinagar, Department of Electronics and Telecommunication Engg, Centre Of Excellence (Thinking Systems for Signal and Image Processing)."
+    description: "The International Conference on Artificial Intelligence for Sustainable Growth brings together thought leaders, researchers, policymakers, technologists, and social innovators from around the world to explore how AI can be leveraged to address the most pressing challenges of the time. Organized by Government College Of Engineering, Aurangabad, Chh. Sambhajinagar, Department of Electronics and Telecommunication Engg, Centre Of Excellence (Thinking Systems for Signal and Image Processing)."
 };
 
 export const gecaStats: GECAStat[] = [
@@ -50,23 +59,23 @@ export const gecaStats: GECAStat[] = [
 export const timelineMilestones: TimelineMilestone[] = [
     {
         id: 1,
-        date: "Nov. 2025",
+        date: "Jan. 2026",
         label: "Committee Formation",
         title: "Formation of Committees",
         description: "Formation of various committees, viz. Advisory Committee, Technical Committee, Steering Committee, Publication Committee, etc. Coordinator: Convener/Co-Convener",
-        status: "completed"
+        status: "upcoming"
     },
     {
         id: 2,
-        date: "Dec. 2025",
+        date: "Feb. 2026",
         label: "Call for Papers",
         title: "Call for Research Papers",
         description: "Call for research papers/articles through on-line portal within prescribed scope of research areas. Coordinator: Technical Committee",
-        status: "active"
+        status: "upcoming"
     },
     {
         id: 3,
-        date: "Jan. 2026",
+        date: "March 2026",
         label: "Abstract Submission",
         title: "Submission of Abstracts",
         description: "Submission of Abstracts. Coordinator: Technical Committee",
@@ -74,7 +83,7 @@ export const timelineMilestones: TimelineMilestone[] = [
     },
     {
         id: 4,
-        date: "March 2026",
+        date: "April 2026",
         label: "Full Paper Submission",
         title: "Submission of Full Length Papers",
         description: "Submission of full length paper/research articles. Coordinator: Technical Committee",
@@ -82,7 +91,7 @@ export const timelineMilestones: TimelineMilestone[] = [
     },
     {
         id: 5,
-        date: "April 2026",
+        date: "May 2026",
         label: "Review Process",
         title: "Double Blind Review",
         description: "Review Process (Double blind). Coordinator: Technical Committee",
@@ -123,10 +132,10 @@ export const timelineMilestones: TimelineMilestone[] = [
 ];
 
 export const importantDates: ImportantDate[] = [
-    { id: 1, label: "Call for Papers", date: "Dec. 2025", status: "active" },
-    { id: 2, label: "Abstract Submission", date: "Jan. 2026", status: "upcoming" },
-    { id: 3, label: "Full Paper Submission", date: "March 2026", status: "upcoming" },
-    { id: 4, label: "Review Process", date: "April 2026", status: "upcoming" },
+    { id: 1, label: "Call for Papers", date: "Feb. 2026", status: "upcoming" },
+    { id: 2, label: "Abstract Submission", date: "March 2026", status: "upcoming" },
+    { id: 3, label: "Full Paper Submission", date: "April 2026", status: "upcoming" },
+    { id: 4, label: "Review Process", date: "May 2026", status: "upcoming" },
     { id: 5, label: "Acceptance Notification", date: "June 2026", status: "upcoming" },
     { id: 6, label: "Camera Ready Submission", date: "July 2026", status: "upcoming" },
     { id: 7, label: "Conference Dates", date: "August 2026", status: "upcoming" }
@@ -241,9 +250,9 @@ export const committeeMembers: CommitteeMember[] = [
     },
     {
         id: 4,
-        name: "Dr. K.B. Ladhane",
+        name: "Shri Prashant Deshpande",
         designation: "Patron",
-        institution: "JD, RO, TE, Chh. Sambhajinagar",
+        institution: "CEO, MediAstra Tech Pvt Ltd",
         category: "Patrons",
         image: "placeholder"
     },
@@ -281,30 +290,6 @@ export const committeeMembers: CommitteeMember[] = [
         category: "International Advisory Committee",
         image: "placeholder"
     },
-    {
-        id: 14,
-        name: "Dr. Bhakti Baheti",
-        designation: "Assistant Professor",
-        institution: "Dept. of Biomedical Engg. Georgia Institute of Technology, Atlanta, Georgia, USA",
-        category: "International Advisory Committee",
-        image: "placeholder"
-    },
-    {
-        id: 15,
-        name: "Dr. Vivek Kshirsagar",
-        designation: "",
-        institution: "",
-        category: "International Advisory Committee",
-        image: "placeholder"
-    },
-    {
-        id: 16,
-        name: "Dr. Govind Yadav",
-        designation: "Post-Doctoral Fellow",
-        institution: "National Tsing Hua University, Taiwan",
-        category: "International Advisory Committee",
-        image: "placeholder"
-    },
     
     // National Advisory Committee
     {
@@ -317,54 +302,6 @@ export const committeeMembers: CommitteeMember[] = [
     },
     {
         id: 21,
-        name: "Dr. Renu John",
-        designation: "Professor",
-        institution: "Biomedical Engg. IIT Hyderabad",
-        category: "National Advisory Committee",
-        image: "placeholder"
-    },
-    {
-        id: 22,
-        name: "Shri Prashant Deshpande",
-        designation: "CEO",
-        institution: "MediAstra Pvt. Ltd",
-        category: "National Advisory Committee",
-        image: "placeholder"
-    },
-    {
-        id: 23,
-        name: "Shri Prasad Kokil",
-        designation: "MD",
-        institution: "Sanjay Technoplast Pvt. Ltd.",
-        category: "National Advisory Committee",
-        image: "placeholder"
-    },
-    {
-        id: 24,
-        name: "Shri Mukund Kulkarni",
-        designation: "CEO",
-        institution: "Global Expert Solutions",
-        category: "National Advisory Committee",
-        image: "placeholder"
-    },
-    {
-        id: 25,
-        name: "Shri Suraj Dumne",
-        designation: "MD",
-        institution: "Anvita Enterprises",
-        category: "National Advisory Committee",
-        image: "placeholder"
-    },
-    {
-        id: 26,
-        name: "Shri Suresh Shakkarwar",
-        designation: "Ex-VP",
-        institution: "Findability Sciences, India",
-        category: "National Advisory Committee",
-        image: "placeholder"
-    },
-    {
-        id: 27,
         name: "Dr. Yashwant Joshi",
         designation: "Ex-Director",
         institution: "WCE, Sangli",
@@ -372,7 +309,7 @@ export const committeeMembers: CommitteeMember[] = [
         image: "placeholder"
     },
     {
-        id: 28,
+        id: 22,
         name: "Dr. Manesh Kokare",
         designation: "Director",
         institution: "SGGSIET, Nanded",
@@ -380,7 +317,7 @@ export const committeeMembers: CommitteeMember[] = [
         image: "placeholder"
     },
     {
-        id: 29,
+        id: 23,
         name: "Dr. Prasanna Porwal",
         designation: "Senior Imaging Scientist",
         institution: "Roche Information Solutions India Pvt.Ltd. Pune",
@@ -388,7 +325,7 @@ export const committeeMembers: CommitteeMember[] = [
         image: "placeholder"
     },
     {
-        id: 30,
+        id: 24,
         name: "Dr. Prashant Patil",
         designation: "Assistant Professor",
         institution: "IIT Guwahati, India",
@@ -396,7 +333,7 @@ export const committeeMembers: CommitteeMember[] = [
         image: "placeholder"
     },
     {
-        id: 31,
+        id: 25,
         name: "Dr. Shruti Phutke",
         designation: "Data Scientist",
         institution: "Yamaha Motor Solutions Noida, India",
@@ -404,10 +341,42 @@ export const committeeMembers: CommitteeMember[] = [
         image: "placeholder"
     },
     {
-        id: 32,
+        id: 26,
         name: "Shri Milind Kamble",
         designation: "Vice President",
         institution: "TCS, Mumbai",
+        category: "National Advisory Committee",
+        image: "placeholder"
+    },
+    {
+        id: 27,
+        name: "Shri Prasad Kokil",
+        designation: "MD",
+        institution: "Sanjay Technoplast Pvt. Ltd.",
+        category: "National Advisory Committee",
+        image: "placeholder"
+    },
+    {
+        id: 28,
+        name: "Shri Mukund Kulkarni",
+        designation: "CEO",
+        institution: "Global Expert Solutions",
+        category: "National Advisory Committee",
+        image: "placeholder"
+    },
+    {
+        id: 29,
+        name: "Shri Suraj Dumne",
+        designation: "MD",
+        institution: "Anvita Enterprises",
+        category: "National Advisory Committee",
+        image: "placeholder"
+    },
+    {
+        id: 30,
+        name: "Shri Suresh Shakkarwar",
+        designation: "Ex-VP",
+        institution: "Findability Sciences, India",
         category: "National Advisory Committee",
         image: "placeholder"
     },
@@ -424,7 +393,7 @@ export const committeeMembers: CommitteeMember[] = [
     {
         id: 41,
         name: "Dr. Sunil Hirekhan",
-        designation: "Organizing Chair",
+        designation: "Program Chair",
         institution: "GEC Chh. Sambhajinagar",
         category: "Organizing Committee",
         image: "/images/committee/Deans/hirekhansir.jpg"
@@ -432,7 +401,7 @@ export const committeeMembers: CommitteeMember[] = [
     {
         id: 42,
         name: "Dr. Anil Karwankar",
-        designation: "Organizing Co-Chair",
+        designation: "Program Co-Chair",
         institution: "GEC Chh. Sambhajinagar",
         category: "Organizing Committee",
         image: "placeholder"
@@ -440,7 +409,7 @@ export const committeeMembers: CommitteeMember[] = [
     {
         id: 43,
         name: "Dr. Varsha Ratnaparkhe",
-        designation: "Convener",
+        designation: "Organizing Chair",
         institution: "Steering Committee, GEC Chh. Sambhajinagar",
         category: "Organizing Committee",
         image: "placeholder"
@@ -448,7 +417,7 @@ export const committeeMembers: CommitteeMember[] = [
     {
         id: 44,
         name: "Dr. Sushama Agrawal",
-        designation: "Co-Convener",
+        designation: "Organizing Co-Chair",
         institution: "Publication Committee, GEC Chh. Sambhajinagar",
         category: "Organizing Committee",
         image: "/images/committee/Deans/agrawalmam.png"

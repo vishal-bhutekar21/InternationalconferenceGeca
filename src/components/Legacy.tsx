@@ -8,7 +8,7 @@ const Legacy = () => {
                     <div className="badge">Our History</div>
                     <h2 style={{ fontSize: '3rem', fontWeight: 800, marginTop: '1rem' }}>
                         Legacy of the 1st International Conference<br />
-                        <span style={{ color: 'var(--color-accent-orange)' }}>ICAESD-24</span>
+                        <span style={{ color: 'var(--color-accent-orange)' }}>ICAISG-26</span>
                     </h2>
                     <div style={{ width: '80px', height: '4px', backgroundColor: 'var(--color-accent-orange)', margin: '1.5rem auto', borderRadius: '4px' }} />
                 </div>
@@ -29,9 +29,9 @@ const Legacy = () => {
                 >
                     <img
                         src="/logos/conferenceimage.jpeg"
-                        alt="ICAESD-2024 Session"
+                        alt="ICAISG-2026 Session"
                         style={{ width: '100%', height: 'auto', display: 'block' }}
-                        onError={(e) => { e.currentTarget.src = 'https://placehold.co/1200x600?text=Conference+Session+2024' }}
+                        onError={(e) => { e.currentTarget.src = 'https://placehold.co/1200x600?text=Conference+Session+2026' }}
                     />
                     <div style={{
                         position: 'absolute',
@@ -39,7 +39,7 @@ const Legacy = () => {
                         background: 'linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.6) 100%)'
                     }} />
                     <div style={{ position: 'absolute', bottom: '30px', left: '40px', textAlign: 'left', color: 'white' }}>
-                        <h4 style={{ fontSize: '1.5rem', marginBottom: '0.5rem', color: 'white' }}>Inaugural Session - ICAESD 2024</h4>
+                        <h4 style={{ fontSize: '1.5rem', marginBottom: '0.5rem', color: 'white' }}>Inaugural Session - ICAISG 2026</h4>
                         <p style={{ opacity: 0.9 }}>A milestone event for Sustainable Engineering and Innovation.</p>
                     </div>
                 </motion.div>

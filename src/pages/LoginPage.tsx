@@ -46,7 +46,7 @@ const LoginPage = () => {
                     </div>
 
                     <div style={{ marginTop: 'auto', fontSize: '0.75rem', fontWeight: 700, opacity: 0.7, letterSpacing: '0.1em' }}>
-                        NOV 15-17, 2026 • (AURANGABAD) CHHATRAPATI SAMBHAJINAGAR, INDIA
+                        AUGUST 2026 • (AURANGABAD) CHHATRAPATI SAMBHAJINAGAR, INDIA
                     </div>
                 </div>
 

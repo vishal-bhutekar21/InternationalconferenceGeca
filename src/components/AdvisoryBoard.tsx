@@ -33,24 +33,6 @@ const AdvisoryBoard = () => {
             designation: 'Computer Vision Research Engineer',
             institution: 'Akeso Eyecare, Shijingshan, Beijing, China',
             country: 'China'
-        },
-        {
-            name: 'Dr. Bhakti Baheti',
-            designation: 'Assistant Professor',
-            institution: 'Dept. of Biomedical Engg. Georgia Institute of Technology, Atlanta, Georgia, USA',
-            country: 'USA'
-        },
-        {
-            name: 'Dr. Vivek Kshirsagar',
-            designation: '',
-            institution: '',
-            country: ''
-        },
-        {
-            name: 'Dr. Govind Yadav',
-            designation: 'Post-Doctoral Fellow',
-            institution: 'National Tsing Hua University, Taiwan',
-            country: 'Taiwan'
         }
     ];
 
@@ -59,42 +41,6 @@ const AdvisoryBoard = () => {
             name: 'Dr. Sumantra Datta Roy',
             designation: 'Professor',
             institution: 'Electrical Engg. IIT Delhi',
-            country: 'India'
-        },
-        {
-            name: 'Dr. Renu John',
-            designation: 'Professor',
-            institution: 'Biomedical Engg. IIT Hyderabad',
-            country: 'India'
-        },
-        {
-            name: 'Shri Prashant Deshpande',
-            designation: 'CEO',
-            institution: 'MediAstra Pvt. Ltd',
-            country: 'India'
-        },
-        {
-            name: 'Shri Prasad Kokil',
-            designation: 'MD',
-            institution: 'Sanjay Technoplast Pvt. Ltd.',
-            country: 'India'
-        },
-        {
-            name: 'Shri Mukund Kulkarni',
-            designation: 'CEO',
-            institution: 'Global Expert Solutions',
-            country: 'India'
-        },
-        {
-            name: 'Shri Suraj Dumne',
-            designation: 'MD',
-            institution: 'Anvita Enterprises',
-            country: 'India'
-        },
-        {
-            name: 'Shri Suresh Shakkarwar',
-            designation: 'Ex-VP',
-            institution: 'Findability Sciences, India',
             country: 'India'
         },
         {
@@ -131,6 +77,30 @@ const AdvisoryBoard = () => {
             name: 'Shri Milind Kamble',
             designation: 'Vice President',
             institution: 'TCS, Mumbai',
+            country: 'India'
+        },
+        {
+            name: 'Shri Prasad Kokil',
+            designation: 'MD',
+            institution: 'Sanjay Technoplast Pvt. Ltd.',
+            country: 'India'
+        },
+        {
+            name: 'Shri Mukund Kulkarni',
+            designation: 'CEO',
+            institution: 'Global Expert Solutions',
+            country: 'India'
+        },
+        {
+            name: 'Shri Suraj Dumne',
+            designation: 'MD',
+            institution: 'Anvita Enterprises',
+            country: 'India'
+        },
+        {
+            name: 'Shri Suresh Shakkarwar',
+            designation: 'Ex-VP',
+            institution: 'Findability Sciences, India',
             country: 'India'
         }
     ];

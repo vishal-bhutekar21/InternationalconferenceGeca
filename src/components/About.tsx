@@ -30,7 +30,7 @@ const About = () => {
                         </div>
                         <h2 style={{ fontSize: 'clamp(2.5rem, 6vw, 3.5rem)', fontWeight: 900, lineHeight: 1.2, marginBottom: '2rem', color: 'var(--color-primary)' }}>
                             Artificial Intelligence for <br />
-                            <span style={{ color: 'var(--color-accent-orange)' }}>Societal Growth</span>
+                            <span style={{ color: 'var(--color-accent-orange)' }}>Sustainable Growth</span>
                         </h2>
                         <div style={{ marginBottom: '2rem' }}>
                             <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--color-primary)' }}>Preamble</h3>
@@ -53,7 +53,7 @@ const About = () => {
                         <div style={{ marginBottom: '3rem' }}>
                             <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '1rem', color: 'var(--color-primary)' }}>Objectives</h3>
                             <p style={{ fontSize: '1.1rem', lineHeight: 1.8, color: 'var(--color-text-muted)', marginBottom: '1rem' }}>
-                                The International Conference on AI for Societal Growth aims to create a global platform for advancing the responsible development and application of Artificial Intelligence to address critical societal needs. The conference seeks to unite researchers, practitioners, policymakers, industry leaders, and civil society to explore how AI can accelerate sustainable development, improve quality of life, and promote inclusive progress across communities worldwide.
+                                The International Conference on AI for Sustainable Growth aims to create a global platform for advancing the responsible development and application of Artificial Intelligence to address critical societal needs. The conference seeks to unite researchers, practitioners, policymakers, industry leaders, and civil society to explore how AI can accelerate sustainable development, improve quality of life, and promote inclusive progress across communities worldwide.
                             </p>
                             <p style={{ fontSize: '1rem', fontWeight: 700, marginBottom: '0.75rem', color: 'var(--color-primary)' }}>The purpose of the conference is to:</p>
                             <ul style={{ listStyle: 'none', padding: 0, margin: 0, marginBottom: '1.5rem' }}>
@@ -79,7 +79,7 @@ const About = () => {
                                 </li>
                             </ul>
                             <p style={{ fontSize: '1rem', lineHeight: 1.8, color: 'var(--color-text-muted)', fontStyle: 'italic' }}>
-                                The International Conference aims to provide a platform for researchers, academicians and industrial fraternity for exchange of ideas, fruitful interactions, derive implementable inferences. It also acts as an opportunity to disseminate innovative concepts useful for fostering sustainable societal growth.
+                                The International Conference aims to provide a platform for researchers, academicians and industrial fraternity for exchange of ideas, fruitful interactions, derive implementable inferences. It also acts as an opportunity to disseminate innovative concepts useful for fostering sustainable growth.
                             </p>
                         </div>
 

@@ -4,46 +4,46 @@ import { FaFileAlt, FaClock, FaCalendarCheck, FaUserCheck, FaUsers, FaArrowRight
 const HomeDatesSection = () => {
     const dates = [
         {
-            label: "Paper Submission",
-            startDate: "01 May 2026",
-            endDate: "15 Aug 2026",
-            details: "Submission of full length papers for technical review and feedback.",
+            label: "Call for Papers",
+            startDate: "Feb. 2026",
+            endDate: "",
+            details: "Call for research papers/articles through on-line portal within prescribed scope of research areas.",
             icon: <FaFileAlt />,
             gradient: "#5D7285", // Muted Slate Blue
             shadowColor: "rgba(93, 114, 133, 0.4)"
         },
         {
-            label: "Acceptance Notification",
-            startDate: "16 Aug 2026",
-            endDate: "15 Sep 2026",
-            details: "Communication of review outcomes and acceptance decisions to authors.",
+            label: "Abstract Submission",
+            startDate: "March 2026",
+            endDate: "",
+            details: "Submission of Abstracts.",
             icon: <FaClock />,
             gradient: "#9A5B5B", // Muted Red
             shadowColor: "rgba(154, 91, 91, 0.4)"
         },
         {
-            label: "Camera Ready",
-            startDate: "16 Sep 2026",
-            endDate: "30 Sep 2026",
-            details: "Final manuscript submission and copyright form completion.",
+            label: "Full Paper Submission",
+            startDate: "April 2026",
+            endDate: "",
+            details: "Submission of full length paper/research articles.",
             icon: <FaCalendarCheck />,
             gradient: "#4F8A83", // Muted Teal
             shadowColor: "rgba(79, 138, 131, 0.4)"
         },
         {
-            label: "Registration",
-            startDate: "01 Oct 2026",
-            endDate: "15 Oct 2026",
-            details: "Deadline for conference registration and fee payment.",
+            label: "Acceptance Notification",
+            startDate: "June 2026",
+            endDate: "",
+            details: "Communication of Acceptance to Authors.",
             icon: <FaUserCheck />,
             gradient: "#A67C52", // Muted Bronze
             shadowColor: "rgba(166, 124, 82, 0.4)"
         },
         {
-            label: "Main Event",
-            startDate: "20 Dec 2026",
-            endDate: "21 Dec 2026",
-            details: "Technical sessions, keynotes, and sustainable networking at GECCS.",
+            label: "Conference Dates",
+            startDate: "Aug. 2026",
+            endDate: "",
+            details: "Main conference event with technical sessions, keynotes, and networking.",
             icon: <FaUsers />,
             gradient: "#5C7C6D", // Muted Sage
             shadowColor: "rgba(92, 124, 109, 0.4)"
@@ -167,7 +167,7 @@ const HomeDatesSection = () => {
 
                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem', marginBottom: '1rem' }}>
                                     <div style={{ fontSize: '1.1rem', fontWeight: 700, color: 'white' }}>
-                                        {item.startDate} — {item.endDate}
+                                        {item.startDate}{item.endDate ? ` — ${item.endDate}` : ''}
                                     </div>
                                 </div>
 
