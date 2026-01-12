@@ -58,14 +58,13 @@ const Hero = () => {
                             color: 'var(--color-primary)',
                             letterSpacing: '-0.03em'
                         }}>
-                            Innovating for a <br />
+                            Artificial Intelligence for <br />
                             <span style={{
                                 background: 'linear-gradient(135deg, var(--color-accent-orange) 0%, #EA580C 100%)',
                                 WebkitBackgroundClip: 'text',
                                 WebkitTextFillColor: 'transparent',
                                 backgroundClip: 'text'
-                            }}>Sustainable Future</span> <br />
-                            Through AI
+                            }}>Societal Growth</span>
                         </h1>
 
                         <p style={{
@@ -76,7 +75,7 @@ const Hero = () => {
                             maxWidth: '680px',
                             fontWeight: 500
                         }}>
-                            The <span style={{ color: 'var(--color-primary)', fontWeight: 700 }}>International Conference on Artificial Intelligence (AI) for Sustainable Growth (ICAISG2026)</span> is a premier platform for global researchers, hosted by <span style={{ color: 'var(--color-primary)', fontWeight: 700 }}>Centre of Excellence, E&TC, Government College of Engineering, Chhatrapati Sambhajinagar</span>. Join us for a transformative exchange of ideas in technical innovation and environmental stewardship.
+                            The <span style={{ color: 'var(--color-primary)', fontWeight: 700 }}>International Conference on Artificial Intelligence for Societal Growth (ICAISG2026)</span> brings together thought leaders, researchers, policymakers, technologists, and social innovators from around the world. Hosted by <span style={{ color: 'var(--color-primary)', fontWeight: 700 }}>Department of Electronics and Telecommunication Engg, Centre Of Excellence (Thinking Systems for Signal and Image Processing), Government College of Engineering, Aurangabad, Chh. Sambhajinagar</span>. Join us for a transformative exchange of ideas that harness AI for societal advancement.
                         </p>
 
                         <div style={{ display: 'flex', gap: '1.25rem', marginBottom: '3.5rem', flexWrap: 'wrap' }}>
@@ -93,7 +92,7 @@ const Hero = () => {
                         <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', marginBottom: '2.5rem' }}>
                             <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', backgroundColor: '#F1F5F9', padding: '0.4rem 0.8rem', borderRadius: '8px' }}>
                                 <FaCalendarAlt color="var(--color-accent-orange)" size={14} />
-                                <span style={{ fontWeight: 700, fontSize: '0.85rem', color: '#334155' }}>Aug 27-28, 2026</span>
+                                <span style={{ fontWeight: 700, fontSize: '0.85rem', color: '#334155' }}>August 2026</span>
                             </div>
                             <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', backgroundColor: '#F1F5F9', padding: '0.4rem 0.8rem', borderRadius: '8px' }}>
                                 <FaMapMarkerAlt color="var(--color-accent-orange)" size={14} />
@@ -160,7 +159,7 @@ const Hero = () => {
                                     letterSpacing: '-0.02em',
                                     marginBottom: '1.25rem'
                                 }}>
-                                    Building Sustainable Futures Through <span style={{ color: 'var(--color-accent-orange)' }}>AI Innovation</span>
+                                    Harnessing AI for <span style={{ color: 'var(--color-accent-orange)' }}>Societal Growth</span>
                                 </div>
 
                                 <div style={{

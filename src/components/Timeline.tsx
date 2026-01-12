@@ -159,7 +159,7 @@ const Timeline = () => {
                         maxWidth: '700px',
                         margin: '0 auto'
                     }}>
-                        Follow the key milestones leading up to ICAISD 2026
+                        Follow the key milestones leading up to ICAISG 2026
                     </p>
                 </motion.div>
 

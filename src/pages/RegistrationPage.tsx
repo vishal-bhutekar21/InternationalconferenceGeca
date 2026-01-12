@@ -80,7 +80,7 @@ const RegistrationPage = () => {
             {/* Header / Hero */}
             <section className="section" style={{ padding: '4rem 0 2rem', backgroundColor: 'white', borderBottom: '1px solid var(--color-border)' }}>
                 <div className="container" style={{ textAlign: 'center' }}>
-                    <div className="badge" style={{ marginBottom: '1.5rem' }}>ICAISD 2026 PORTAL</div>
+                    <div className="badge" style={{ marginBottom: '1.5rem' }}>ICAISG 2026 PORTAL</div>
                     <h1 style={{ fontSize: 'clamp(2.5rem, 6vw, 4rem)', fontWeight: 900, marginBottom: '1rem', color: 'var(--color-primary)' }}>
                         Conference <span style={{ color: 'var(--color-accent-orange)' }}>Registration</span>
                     </h1>
@@ -313,7 +313,7 @@ const RegistrationPage = () => {
                                             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                                                 <div className="form-group">
                                                     <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 600 }}>Paper ID *</label>
-                                                    <input type="text" placeholder="e.g. ICAISD-2025-045" style={{ width: '100%', padding: '1rem', borderRadius: '12px', border: '1px solid #E2E8F0', backgroundColor: 'white' }} />
+                                                    <input type="text" placeholder="e.g. ICAISG-2026-045" style={{ width: '100%', padding: '1rem', borderRadius: '12px', border: '1px solid #E2E8F0', backgroundColor: 'white' }} />
                                                 </div>
                                                 <div style={{
                                                     display: 'flex',

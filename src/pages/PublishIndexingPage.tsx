@@ -49,7 +49,7 @@ const PublishIndexingPage = () => {
                             <div>
                                 <h2 style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--color-primary)', marginBottom: '0.5rem' }}>Conference Proceedings</h2>
                                 <p style={{ color: 'var(--color-text-muted)', lineHeight: 1.6 }}>
-                                    All presented papers will be published in the ICAISD 2026 Conference Proceedings. We ensure the highest academic standards through a rigorous double-blind peer-review process.
+                                    All presented papers will be published in the ICAISG 2026 Conference Proceedings. We ensure the highest academic standards through a rigorous double-blind peer-review process.
                                 </p>
                             </div>
                         </div>

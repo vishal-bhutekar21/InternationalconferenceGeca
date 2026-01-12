@@ -10,7 +10,7 @@ const AccommodationPage = () => {
             distance: "3.5 km from GECCS",
             images: ['placeholder1', 'placeholder2', 'placeholder3'],
             amenities: ["Free WiFi", "Breakfast", "Pool", "Parking"],
-            description: "Luxury 5-star hotel offering world-class amenities and exceptional service. Perfect for international delegates seeking premium accommodation during ICAISD 2026.",
+            description: "Luxury 5-star hotel offering world-class amenities and exceptional service. Perfect for international delegates seeking premium accommodation during ICAISG 2026.",
             website: "https://www.vivantahotels.com"
         },
         {
@@ -92,7 +92,7 @@ const AccommodationPage = () => {
                             Special Rates for Delegates
                         </h2>
                         <p style={{ maxWidth: '600px', margin: '0 auto 2.5rem auto', opacity: 0.8, lineHeight: 1.6 }}>
-                            We have partnered with several hotels to provide discounted rates for ICAISD 2026 delegates. Mention your Registration ID when booking to avail special conference rates.
+                            We have partnered with several hotels to provide discounted rates for ICAISG 2026 delegates. Mention your Registration ID when booking to avail special conference rates.
                         </p>
                         <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
                             <div style={{ textAlign: 'center', minWidth: '150px' }}>

@@ -4,16 +4,16 @@ import { motion, AnimatePresence } from 'framer-motion';
 const GalleryPage = () => {
     const [filter, setFilter] = useState('All');
 
-    const categories = ['All', 'ICAISD 2026', 'Legacy ICAISD-24', 'Keynote Speakers', 'Networking'];
+    const categories = ['All', 'ICAISG 2026', 'Legacy ICAISD-24', 'Keynote Speakers', 'Networking'];
 
     const items = [
         { id: 1, category: 'Keynote Speakers', image: 'https://images.unsplash.com/photo-1475721027185-404ebc7743f2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', title: 'Session Highlights' },
         { id: 2, category: 'Networking', image: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', title: 'Break Conversations' },
-        { id: 3, category: 'ICAISD 2026', image: 'https://images.unsplash.com/photo-1431540015161-0bf868a2d407?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', title: 'GECCS Campus' },
+        { id: 3, category: 'ICAISG 2026', image: 'https://images.unsplash.com/photo-1431540015161-0bf868a2d407?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', title: 'GECCS Campus' },
         { id: 4, category: 'Legacy ICAISD-24', image: 'https://images.unsplash.com/photo-1540575861501-7ce058a877c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', title: 'Inauguration 2024' },
         { id: 5, category: 'Networking', image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', title: 'Global Delegates' },
         { id: 6, category: 'Keynote Speakers', image: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', title: 'Expert Panels' },
-        { id: 7, category: 'ICAISD 2026', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', title: 'Auditorium' },
+        { id: 7, category: 'ICAISG 2026', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', title: 'Auditorium' },
         { id: 8, category: 'Networking', image: 'https://images.unsplash.com/photo-1528605248644-14dd04cb2201?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80', title: 'Collaborations' }
     ];
 

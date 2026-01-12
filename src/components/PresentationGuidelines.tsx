@@ -43,7 +43,7 @@ const PresentationGuidelines = () => {
                         Presentation <span style={{ color: 'var(--color-accent-orange)' }}>Guidelines</span>
                     </h2>
                     <p style={{ color: 'var(--color-text-muted)', fontSize: '1.1rem', maxWidth: '700px', margin: '0 auto' }}>
-                        Follow these guidelines to deliver an effective presentation at ICAISD 2025.
+                        Follow these guidelines to deliver an effective presentation at ICAISG 2026.
                     </p>
                 </div>
 

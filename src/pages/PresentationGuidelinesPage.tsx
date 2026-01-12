@@ -13,7 +13,7 @@ const PresentationGuidelinesPage = () => {
                     <div className="badge" style={{ marginBottom: '1rem' }}>PRESENTER RESOURCES</div>
                     <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 3.5rem)', fontWeight: 800, color: 'var(--color-primary)' }}>Presentation <span style={{ color: 'var(--color-accent-orange)' }}>Guidelines</span></h1>
                     <p style={{ color: 'var(--color-text-muted)', maxWidth: '600px', margin: '1rem auto' }}>
-                        Everything you need to know about preparing and delivering your presentation at ICAISD 2026.
+                        Everything you need to know about preparing and delivering your presentation at ICAISG 2026.
                     </p>
                 </motion.div>
 
@@ -121,7 +121,7 @@ const PresentationGuidelinesPage = () => {
                                 </div>
                                 <div style={{ padding: '1.5rem', backgroundColor: 'var(--color-bg-light)', borderRadius: '20px' }}>
                                     <div style={{ fontWeight: 800, color: 'var(--color-accent-orange)', marginBottom: '0.5rem' }}>Naming Convention</div>
-                                    <p style={{ fontSize: '0.9rem', color: 'var(--color-text-muted)', fontFamily: 'monospace' }}>ICAISD2026_PaperID_FirstAuthor.pptx</p>
+                                    <p style={{ fontSize: '0.9rem', color: 'var(--color-text-muted)', fontFamily: 'monospace' }}>ICAISG2026_PaperID_FirstAuthor.pptx</p>
                                 </div>
                             </div>
                         </div>

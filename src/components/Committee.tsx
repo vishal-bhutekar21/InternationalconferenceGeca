@@ -1,17 +1,16 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { committeeMembers } from '../data/conferenceData';
-import { FaSearch, FaUserTie, FaUsers, FaGraduationCap, FaUserGraduate, FaLaptopCode, FaCogs } from 'react-icons/fa';
+import { FaSearch, FaUserTie, FaUsers, FaGraduationCap, FaUserGraduate, FaLaptopCode, FaCogs, FaGlobe, FaFlag } from 'react-icons/fa';
 
 const Committee = () => {
     const [searchTerm, setSearchTerm] = useState('');
 
     const categories = [
-        { name: "Conference Leadership", icon: <FaUserTie /> },
-        { name: "Deans", icon: <FaGraduationCap /> },
-        { name: "Heads of Departments", icon: <FaCogs /> },
-        { name: "Student Committee", icon: <FaUserGraduate /> },
-        { name: "Development Team", icon: <FaLaptopCode /> }
+        { name: "Patrons", icon: <FaUserTie /> },
+        { name: "International Advisory Committee", icon: <FaGlobe /> },
+        { name: "National Advisory Committee", icon: <FaFlag /> },
+        { name: "Organizing Committee", icon: <FaCogs /> }
     ];
 
     const filteredMembers = committeeMembers.filter(member =>
@@ -31,10 +30,10 @@ const Committee = () => {
                 <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
                     <div className="badge">MANAGEMENT TEAM</div>
                     <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 800, marginTop: '1rem' }}>
-                        Committee <span style={{ color: 'var(--color-accent-orange)' }}>Members</span>
+                        Advisory <span style={{ color: 'var(--color-accent-orange)' }}>Committee</span>
                     </h2>
                     <p style={{ maxWidth: '700px', margin: '1rem auto', color: 'var(--color-text-muted)', fontSize: '1.1rem' }}>
-                        The successful completion of ICAISD 2026 is guided by these dedicated professionals and student volunteers.
+                        The successful completion of ICAISG 2026 is guided by these dedicated professionals and advisory members.
                     </p>
                 </div>
 
@@ -129,7 +128,8 @@ const Committee = () => {
                                                 border: '2px solid var(--color-border)',
                                                 boxShadow: 'var(--shadow-md)',
                                                 flex: '1 1 280px',
-                                                maxWidth: '320px',
+                                                maxWidth: '350px',
+                                                minHeight: '320px',
                                                 position: 'relative',
                                                 zIndex: 1
                                             }}
@@ -162,26 +162,68 @@ const Committee = () => {
                                                     zIndex: 10
                                                 }}
                                             >
-                                                {member.image && member.image.startsWith('placeholder') ?
-                                                    <div style={{ fontSize: '2.5rem', opacity: 0.3 }}><FaUserTie /></div> :
-                                                    <img src={member.image} alt={member.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                                                }
+                                                {(!member.image || member.image === 'placeholder') ? (
+                                                    <div style={{ 
+                                                        fontSize: '2.5rem', 
+                                                        opacity: 0.3, 
+                                                        display: 'flex', 
+                                                        alignItems: 'center', 
+                                                        justifyContent: 'center', 
+                                                        width: '100%', 
+                                                        height: '100%',
+                                                        color: 'var(--color-accent-orange)'
+                                                    }}>
+                                                        <FaUserTie />
+                                                    </div>
+                                                ) : (
+                                                    <img 
+                                                        src={member.image} 
+                                                        alt={member.name} 
+                                                        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                                        onError={(e) => {
+                                                            const target = e.target as HTMLImageElement;
+                                                            target.style.display = 'none';
+                                                            const parent = target.parentElement;
+                                                            if (parent) {
+                                                                const placeholder = document.createElement('div');
+                                                                placeholder.style.cssText = 'font-size: 2.5rem; opacity: 0.3; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; color: var(--color-accent-orange);';
+                                                                placeholder.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>';
+                                                                parent.appendChild(placeholder);
+                                                            }
+                                                        }} 
+                                                    />
+                                                )}
                                             </motion.div>
                                             <h4 style={{ fontSize: '1.2rem', fontWeight: 800, marginBottom: '0.4rem', color: 'var(--color-primary)', lineHeight: 1.2 }}>{member.name}</h4>
-                                            <div style={{
-                                                color: 'var(--color-accent-orange)',
-                                                fontWeight: 800,
-                                                fontSize: '0.75rem',
-                                                marginBottom: '0.75rem',
-                                                textTransform: 'uppercase',
-                                                letterSpacing: '0.05em',
-                                                backgroundColor: 'var(--color-orange-soft)',
-                                                padding: '0.3rem 0.8rem',
-                                                borderRadius: '50px'
-                                            }}>
-                                                {member.designation}
-                                            </div>
-                                            <p style={{ color: 'var(--color-text-muted)', fontSize: '0.85rem', lineHeight: 1.4, fontWeight: 500 }}>{member.institution}</p>
+                                            {member.designation && (
+                                                <div style={{
+                                                    color: 'var(--color-accent-orange)',
+                                                    fontWeight: 800,
+                                                    fontSize: '0.75rem',
+                                                    marginBottom: '0.75rem',
+                                                    textTransform: 'uppercase',
+                                                    letterSpacing: '0.05em',
+                                                    backgroundColor: 'var(--color-orange-soft)',
+                                                    padding: '0.3rem 0.8rem',
+                                                    borderRadius: '50px',
+                                                    display: 'inline-block'
+                                                }}>
+                                                    {member.designation}
+                                                </div>
+                                            )}
+                                            {member.institution && (
+                                                <p style={{ 
+                                                    color: 'var(--color-text-muted)', 
+                                                    fontSize: '0.85rem', 
+                                                    lineHeight: 1.5, 
+                                                    fontWeight: 500,
+                                                    wordWrap: 'break-word',
+                                                    overflowWrap: 'break-word',
+                                                    hyphens: 'auto'
+                                                }}>
+                                                    {member.institution}
+                                                </p>
+                                            )}
                                         </motion.div>
                                     ))}
                                 </AnimatePresence>

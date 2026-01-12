@@ -9,45 +9,128 @@ interface BoardMember {
 }
 
 const AdvisoryBoard = () => {
-    // Placeholder data - will be replaced with actual data
     const internationalBoard: BoardMember[] = [
         {
-            name: 'Dr. John Smith',
-            designation: 'Professor',
-            institution: 'MIT, USA',
+            name: 'Dr. Matthias Zobel',
+            designation: 'Co-Founder, CEO',
+            institution: 'GAIMAZO GMBH, Germany',
+            country: 'Germany'
+        },
+        {
+            name: 'Gregor Matenaer',
+            designation: 'Co-Founder, CEO',
+            institution: 'GAIMAZO GMBH, Germany',
+            country: 'Germany'
+        },
+        {
+            name: 'Dr. Ujjwal Baid',
+            designation: 'Director, Research',
+            institution: 'Dept. of Biomedical Engg. Georgia Institute of Technology, Atlanta, Georgia, USA',
             country: 'USA'
         },
         {
-            name: 'Dr. Maria Garcia',
-            designation: 'Associate Professor',
-            institution: 'Oxford University',
-            country: 'UK'
+            name: 'Dr. Samiksha Pachade',
+            designation: 'Computer Vision Research Engineer',
+            institution: 'Akeso Eyecare, Shijingshan, Beijing, China',
+            country: 'China'
         },
         {
-            name: 'Dr. Li Wei',
-            designation: 'Professor',
-            institution: 'Tsinghua University',
-            country: 'China'
+            name: 'Dr. Bhakti Baheti',
+            designation: 'Assistant Professor',
+            institution: 'Dept. of Biomedical Engg. Georgia Institute of Technology, Atlanta, Georgia, USA',
+            country: 'USA'
+        },
+        {
+            name: 'Dr. Vivek Kshirsagar',
+            designation: '',
+            institution: '',
+            country: ''
+        },
+        {
+            name: 'Dr. Govind Yadav',
+            designation: 'Post-Doctoral Fellow',
+            institution: 'National Tsing Hua University, Taiwan',
+            country: 'Taiwan'
         }
     ];
 
     const nationalBoard: BoardMember[] = [
         {
-            name: 'Dr. Rajesh Kumar',
+            name: 'Dr. Sumantra Datta Roy',
             designation: 'Professor',
-            institution: 'IIT Bombay',
+            institution: 'Electrical Engg. IIT Delhi',
             country: 'India'
         },
         {
-            name: 'Dr. Priya Sharma',
-            designation: 'Associate Professor',
-            institution: 'IISc Bangalore',
+            name: 'Dr. Renu John',
+            designation: 'Professor',
+            institution: 'Biomedical Engg. IIT Hyderabad',
             country: 'India'
         },
         {
-            name: 'Dr. Amit Patel',
-            designation: 'Professor',
-            institution: 'IIT Delhi',
+            name: 'Shri Prashant Deshpande',
+            designation: 'CEO',
+            institution: 'MediAstra Pvt. Ltd',
+            country: 'India'
+        },
+        {
+            name: 'Shri Prasad Kokil',
+            designation: 'MD',
+            institution: 'Sanjay Technoplast Pvt. Ltd.',
+            country: 'India'
+        },
+        {
+            name: 'Shri Mukund Kulkarni',
+            designation: 'CEO',
+            institution: 'Global Expert Solutions',
+            country: 'India'
+        },
+        {
+            name: 'Shri Suraj Dumne',
+            designation: 'MD',
+            institution: 'Anvita Enterprises',
+            country: 'India'
+        },
+        {
+            name: 'Shri Suresh Shakkarwar',
+            designation: 'Ex-VP',
+            institution: 'Findability Sciences, India',
+            country: 'India'
+        },
+        {
+            name: 'Dr. Yashwant Joshi',
+            designation: 'Ex-Director',
+            institution: 'WCE, Sangli',
+            country: 'India'
+        },
+        {
+            name: 'Dr. Manesh Kokare',
+            designation: 'Director',
+            institution: 'SGGSIET, Nanded',
+            country: 'India'
+        },
+        {
+            name: 'Dr. Prasanna Porwal',
+            designation: 'Senior Imaging Scientist',
+            institution: 'Roche Information Solutions India Pvt.Ltd. Pune',
+            country: 'India'
+        },
+        {
+            name: 'Dr. Prashant Patil',
+            designation: 'Assistant Professor',
+            institution: 'IIT Guwahati, India',
+            country: 'India'
+        },
+        {
+            name: 'Dr. Shruti Phutke',
+            designation: 'Data Scientist',
+            institution: 'Yamaha Motor Solutions Noida, India',
+            country: 'India'
+        },
+        {
+            name: 'Shri Milind Kamble',
+            designation: 'Vice President',
+            institution: 'TCS, Mumbai',
             country: 'India'
         }
     ];

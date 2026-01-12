@@ -3,12 +3,19 @@ import { FaCheckCircle, FaArrowRight } from 'react-icons/fa';
 
 const Tracks = () => {
     const allTracks = [
-        "Artificial Intelligence", "Machine Learning", "Deep Learning",
-        "Data Mining", "Big Data Analytics", "Cloud Computing",
-        "Internet of Things (IoT)", "Smart Systems", "Robotics & Automation",
-        "Cyber Security", "Networking", "Software Engineering",
-        "Image Processing", "Computer Vision", "Natural Language Processing",
-        "Sustainable Development", "Green Computing", "Blockchain Technology"
+        "Motion & Tracking",
+        "Video Surveillance",
+        "AI in Healthcare",
+        "Pattern Recognition",
+        "Computer-Aided Diagnosis",
+        "Machine Learning for Localization",
+        "Human Activity Detection and Recognition",
+        "Human Computer Interaction",
+        "Medical Image Reconstruction",
+        "Generative AI for Computer Vision",
+        "Explainable AI",
+        "Applied AI",
+        "Natural Language Processing"
     ];
 
     const containerVariants = {

@@ -27,7 +27,7 @@ const SchedulePage = () => {
                     <div className="badge">CONFERENCE AGENDA</div>
                     <h1 style={{ fontSize: '4rem', fontWeight: 800, margin: '1rem 0' }}>Program <span style={{ color: 'var(--color-accent-orange)' }}>Schedule</span></h1>
                     <p style={{ maxWidth: '700px', margin: '0 auto 3rem', color: 'var(--color-text-muted)' }}>
-                        Explore the timeline of events, keynote sessions, and technical tracks planned for ICAISD 2026 at GECCS.
+                        Explore the timeline of events, keynote sessions, and technical tracks planned for ICAISG 2026 at GECCS.
                     </p>
 
                     <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', marginBottom: '4rem' }}>

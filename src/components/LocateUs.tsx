@@ -14,7 +14,7 @@ const LocateUs = () => {
                         Locate <span style={{ color: 'var(--color-accent-orange)' }}>Us</span>
                     </h2>
                     <p style={{ color: 'var(--color-text-muted)', fontSize: '1.1rem', maxWidth: '700px', margin: '0 auto' }}>
-                        Find your way to Government College of Engineering, (Aurangabad) Chhatrapati Sambhajinagar - the premier venue for ICAISD 2026
+                        Find your way to Government College of Engineering, (Aurangabad) Chhatrapati Sambhajinagar - the premier venue for ICAISG 2026
                     </p>
                 </div>
 

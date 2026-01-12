@@ -3,22 +3,28 @@ import { motion } from 'framer-motion';
 const Patrons = () => {
     const leadership = [
         {
-            name: "Dr. Sanjay S. Dambhare",
-            role: "Principal & Chief Patron",
-            org: "GECCS, (Aurangabad) Chhatrapati Sambhajinagar",
+            name: "Shri B. Venugopal Reddy, IAS",
+            role: "Patron",
+            org: "Add. Chief Secretary, H&TE, Mantralaya, Mumbai",
             image: "/images/principal.jpg"
         },
         {
-            name: "Dr. S. R. Hirekhan",
-            role: "Organizing Chair",
-            org: "Dept. of AI & DS",
-            image: "/images/committee/Deans/hirekhansir.jpg"
+            name: "Dr. Sanjay Deshmukh",
+            role: "Patron",
+            org: "Chairman, BOG, GEC Chh. Sambhajinagar",
+            image: "/images/principal.jpg"
         },
         {
-            name: "Dr. A. G. Agrawal",
-            role: "Program Chair",
-            org: "GECCS",
-            image: "/images/committee/Deans/agrawalmam.png"
+            name: "Dr. Vinod Mohitkar",
+            role: "Patron",
+            org: "DTE, Mumbai",
+            image: "/images/principal.jpg"
+        },
+        {
+            name: "Dr. K.B. Ladhane",
+            role: "Patron",
+            org: "JD, RO, TE, Chh. Sambhajinagar",
+            image: "/images/principal.jpg"
         }
     ];
 

@@ -17,7 +17,7 @@ const ImportantDates = () => {
                         Important <span style={{ color: 'var(--color-accent-orange)' }}>Dates</span>
                     </h2>
                     <p style={{ maxWidth: '600px', margin: '1rem auto 0', color: 'var(--color-text-muted)', fontSize: '1.1rem', lineHeight: 1.6 }}>
-                        Track the key milestones for ICAISD 2026. Don't miss the deadlines for submission and registration.
+                        Track the key milestones for ICAISG 2026. Don't miss the deadlines for submission and registration.
                     </p>
                 </motion.div>
 

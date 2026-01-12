@@ -3,12 +3,16 @@ import { FaFileDownload, FaFileWord, FaFilePdf } from 'react-icons/fa';
 
 const GuidelinesPage = () => {
     const authorGuidelines = [
-        'Papers must be original and not submitted elsewhere',
-        'Maximum length: 10 pages including references',
-        'Use the provided Springer LNEE template',
-        'Include abstract (150-200 words) and 4-6 keywords',
-        'All figures and tables must be clearly labeled',
-        'References must follow IEEE citation style'
+        'Use the Full Paper Template IEEE Two Column Format. Number of Pages Must be 06 only.',
+        'Papers must be original work and have been not published/submitted elsewhere.',
+        'Plagiarism/Similarity index of the paper must be 10% or less.',
+        'Plagiarism level above 10% will attract immediate rejection of the paper.',
+        'Indicate the most relevant theme during the paper submission.',
+        'Ensure all tables, figures and images have captions and are referenced in the text properly.',
+        'If Paper/Research work is funded by any institution or agency, include acknowledgement.',
+        'Submit the paper in PDF format for review. CRC version must be in both Word and PDF formats.',
+        'Ensure proper grammar, clarity and coherence in English language of the paper.',
+        'Upload the full paper through the official conference submission portal.'
     ];
 
     const submissionSteps = [
@@ -54,7 +58,7 @@ const GuidelinesPage = () => {
                         Author & Submission <span style={{ color: 'var(--color-accent-orange)' }}>Guidelines</span>
                     </h1>
                     <p style={{ maxWidth: '750px', margin: '0 auto', color: 'var(--color-text-muted)', fontSize: '1.2rem', lineHeight: 1.6 }}>
-                        Complete guide for preparing and submitting your research paper to ICAISD 2026
+                        Complete guide for preparing and submitting your research paper to ICAISG 2026
                     </p>
                 </div>
             </section>
@@ -194,7 +198,7 @@ const GuidelinesPage = () => {
                             Submission <span style={{ color: 'var(--color-accent-orange)' }}>Process</span>
                         </h2>
                         <p style={{ color: 'var(--color-text-muted)', fontSize: '1.1rem', maxWidth: '700px', margin: '0 auto' }}>
-                            Follow these steps to submit your paper to ICAISD 2025
+                            Follow these steps to submit your paper to ICAISG 2026
                         </p>
                     </div>
 
@@ -267,11 +271,11 @@ const GuidelinesPage = () => {
                         </p>
                         <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                             <div style={{ backgroundColor: 'rgba(255,255,255,0.1)', padding: '1.5rem 2rem', borderRadius: '10px', minWidth: '200px' }}>
-                                <div style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '0.5rem' }}>Sep 30</div>
+                                <div style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '0.5rem' }}>July 2026</div>
                                 <div style={{ fontSize: '0.9rem', opacity: 0.8 }}>Camera Ready Deadline</div>
                             </div>
                             <div style={{ backgroundColor: 'rgba(255,255,255,0.1)', padding: '1.5rem 2rem', borderRadius: '10px', minWidth: '200px' }}>
-                                <div style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '0.5rem' }}>10 Pages</div>
+                                <div style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '0.5rem' }}>06 Pages</div>
                                 <div style={{ fontSize: '0.9rem', opacity: 0.8 }}>Maximum Length</div>
                             </div>
                             <div style={{ backgroundColor: 'rgba(255,255,255,0.1)', padding: '1.5rem 2rem', borderRadius: '10px', minWidth: '200px' }}>
